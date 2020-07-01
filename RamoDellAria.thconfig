@@ -1,0 +1,10 @@
+encoding  utf-8
+source "RamoDellAria.th" 
+
+export map -projection plan -output RamoDellariaPlan.th2
+
+# Esporta per Loch
+export model -output "RamoDellAria.lox"
+
+# Modello per Aven Survex -  https://survex.com/
+export model -output "RamoDellAria.3d"
