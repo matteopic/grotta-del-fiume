@@ -1,10 +1,31 @@
 encoding  utf-8
 source "RamoDellAria.th" 
 
-export map -projection plan -output RamoDellariaPlan.th2
+# init plan file
+# export map -projection plan -output RamoDellariaPlan.th2
 
-# Esporta per Loch
-export model -output "RamoDellAria.lox"
 
-# Modello per Aven Survex -  https://survex.com/
-export model -output "RamoDellAria.3d"
+## MAPS ##
+
+layout L1000
+  scale 1 1000
+  layers on
+endlayout
+
+# choose which maps to export. default: all maps
+# select map1
+
+export map -projection plan -layout L500 -output "out/RamoDellAria.pdf"
+
+
+
+## 3D Models ##
+
+
+### Loch ###
+
+export model -output "out/RamoDellAria.lox"
+
+### Aven Survex -  https://survex.com/ ###
+
+export model -output "out/RamoDellAria.3d"

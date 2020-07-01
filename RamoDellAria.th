@@ -675,6 +675,7 @@ endcentreline
 
 
 # Unisco il rilevo "pozzo dello sposo" con "fine"
+# Valutare l'uso di "equate"
 centreline
   date 2020.06.27
   data normal from to compass clino tape
@@ -688,6 +689,19 @@ centreline
   fix 1.0  335069  4806922 430
 endcentreline
 
+# SURFACE #
 
 input "RamoDellAria_Surface.th"
+
+
+# MAPS #
+
+input "RamoDellAria_Plan.th2"
+map map1 -title "Global Map"
+  ramo_nuovo
+  ramo_alto
+  mery
+  pozzo_sposo
+  fine
+endmap
 
