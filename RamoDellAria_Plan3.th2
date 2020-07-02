@@ -1,11 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -132.0 2057.1338582677163 9783.559055118109
-##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {650.7480314960628 0 1.0} {3331.755905511811 1.0} fine_p.xvi 0 {}
-##XTHERION## xth_me_image_insert {64.17236220472432 0 1.0} {4824.74433070866 1.53} {ramo alto_p.xvi} 0 {}
-##XTHERION## xth_me_image_insert {614.5669291338581 0 1.0} {7205.5590551181085 1.0} {ramo nuovo_p.xvi} 0 {}
-##XTHERION## xth_me_image_insert {528.3462204724409 1 1.0} {2469.0825984251965 7.0} {da pozzo sposo_p.xvi} 0 {}
-##XTHERION## xth_me_image_insert {161.2994488188976 0 1.0} {2145.318976377953 5.27} {da stretta mery_p.xvi} 0 {}
+##XTHERION## xth_me_area_adjust -144.0 -144.0 1408.0 4432.72440944882
+##XTHERION## xth_me_area_zoom_to 48
+##XTHERION## xth_me_image_insert {161.2994488188976 1 1.0} {2145.318976377953 5.27} {da stretta mery_p.xvi} 0 {}
 
 
 
@@ -178,7 +174,7 @@ line wall
   943.0 3171.0
 endline
 
-line wall
+line wall -id toclean
   43.0 2962.0
   50.0 2982.25 79.0 3031.75 82.75 3050.0
   smooth off
@@ -234,47 +230,7 @@ endline
 
 point 906.4994488188977 3239.9589763779527 station -name 6.15
 
-point 127.1694488188976 2246.4989763779527 station -name 6.3
-
-endscrap
-
-
-
-scrap pozzo_sposo -projection plan -scale [-128.0 2108.7244094488187 2057.1338582677163 2108.7244094488187 0.0 0.0 55.502399999999994 0.0 m]
-
-point 944.0962204724409 2712.9025984251966 station -name 7.6
-
-point 531.5362204724408 2575.8625984251967 station -name 7.1
-
-endscrap
-
-
-
-scrap ramo_nuovo -projection plan -scale [-128.0 2108.7244094488187 2057.1338582677163 2108.7244094488187 0.0 0.0 55.502399999999994 0.0 m]
-
-point 621.8469291338581 7245.869055118109 station -name 1.1
-
-point 851.5769291338581 8661.979055118109 station -name 1.34
-
-endscrap
-
-
-
-scrap ramo_alto -projection plan -scale [-128.0 2108.7244094488187 2057.1338582677163 2108.7244094488187 0.0 0.0 55.502399999999994 0.0 m]
-
-point 115.23236220472427 5061.27433070866 station -name 5.1
-
-point 1030.7923622047242 6745.294330708661 station -name 5.26
-
-endscrap
-
-
-
-scrap fine -projection plan -scale [-128.0 2108.7244094488187 2057.1338582677163 2108.7244094488187 0.0 0.0 55.502399999999994 0.0 m]
-
-point 359.3280314960628 3534.905905511811 station -name FONDO1.29
-
-point 1412.1680314960627 4477.425905511811 station -name FONDO1.16
+point 127.1694488188976 2246.4989763779527 station -id S6.3 -name 6.3
 
 endscrap
 

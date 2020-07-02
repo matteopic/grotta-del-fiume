@@ -696,12 +696,27 @@ input "RamoDellAria_Surface.th"
 
 # MAPS #
 
-input "RamoDellAria_Plan.th2"
-map map1 -title "Global Map"
+input "RamoDellAria_Plan1.th2"
+input "RamoDellAria_Plan2.th2"
+input "RamoDellAria_Plan3.th2"
+input "RamoDellAria_Plan4.th2"
+input "RamoDellAria_Plan5.th2"
+map map_plan -title "Global Map"
   ramo_nuovo
+  ramo_nuovo_underlying
   ramo_alto
+  ramo_alto_poligonale
   mery
   pozzo_sposo
   fine
+  budello_uscita
 endmap
 
+
+input "RamoDellAria_Section1.th2"
+input "RamoDellAria_Section5.th2"
+map map_section -title "Global Section"
+  ramo_nuovo_S1
+  ramo_nuovo_S2
+  fine_S1
+endmap

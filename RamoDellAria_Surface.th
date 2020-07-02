@@ -1,3 +1,4 @@
+encoding  utf-8
 # Therion terrain data created by TerrainTool version 1.13 from Shuttle Radar Topography Mission data
 # SRTM DEM data is public-domain.
 # Used coordinate system UTM with ellipsoid "GRS80" and datum "WGS-84"
