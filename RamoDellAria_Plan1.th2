@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 1419.0 9783.559055118109
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -129.0 -129.0 1417.75 9783.559055118109
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {614.5669291338581 1 1.0} {7205.5590551181085 1.0} {ramo nuovo_p.xvi} 0 {}
 
 
@@ -85,19 +85,19 @@ line section -direction both
   smooth off
 endline
 
-line pit-chimney -close on -reverse on
+line chimney -close on -reverse on
   232.25 7929.75
   235.75 7910.0 214.0 7933.0 232.25 7929.75
   smooth off
 endline
 
-line pit-chimney -close off -reverse on
+line chimney -close off
   184.5 8596.5
   178.75 8616.75 200.75 8601.75 184.5 8596.5
   smooth off
 endline
 
-line wall -id wallBM -subtype underlying
+line wall -id wallBM -subtype underlying -place bottom
   414.0 9205.0
   436.0 9244.0 380.5 9331.0 372.0 9376.5
   smooth off
@@ -111,7 +111,7 @@ line wall -id wallBM -subtype underlying
   smooth off
 endline
 
-line wall -id wallBM2 -subtype underlying
+line wall -id wallBM2 -subtype underlying -place bottom
   329.5 9466.0
   329.5 9466.0 282.5 9463.0 290.0 9506.5
   smooth off
@@ -123,7 +123,7 @@ line wall -id wallBM2 -subtype underlying
   smooth off
 endline
 
-line wall -close on
+line wall -close on -reverse on
   379.0 7885.0
   385.54 7795.56 423.0 7811.5 431.5 7812.0
   smooth off
@@ -139,7 +139,7 @@ line wall -close on
   smooth off
 endline
 
-line wall -close on -reverse on
+line wall -close on
   602.5 8077.0
   643.0 8069.5 670.95 8102.29 682.0 8105.0
   733.05 8117.52 736.5 8074.5 740.0 8048.0
@@ -349,7 +349,7 @@ point 1015.8269291338581 8348.119055118108 station -name 1.40
 
 point 1270.1969291338582 8706.229055118109 station -name 1.36
 
-line wall -reverse on -subtype underlying
+line wall -id est_wall -reverse on -subtype underlying
   768.0 8786.5
   803.75 8772.0 827.0 8767.75 827.0 8767.75
   smooth off
@@ -420,13 +420,13 @@ line wall -subtype underlying
   smooth off
 endline
 
-line wall -id l120-1108-8419 -close on
+line wall -close on -reverse on
   1101.0 8407.0
   1186.0 8524.5 985.0 8419.0 1101.0 8407.0
   smooth off
 endline
 
-line wall -close on
+line wall -close on -reverse on
   1177.6369291338583 8548.66905511811
   1149.0 8574.0 1123.0 8507.0 1153.0 8497.0
   smooth off
@@ -434,17 +434,17 @@ line wall -close on
   smooth off
 endline
 
-line wall -id l124-1123-8346 -subtype underlying
-  1278.5 8507.5
-  1240.5 8509.0 1198.5 8500.5 1176.0 8486.0
+line contour -id l124-1123-8346 -reverse on
+  1282.25 8512.0
+  1244.25 8513.5 1198.5 8500.5 1176.0 8486.0
   smooth off
   1141.0 8442.5 1119.1 8363.33 1120.0 8307.5
   smooth off
-  1120.64 8267.51 1179.5 8268.5 1179.5 8268.5
+  1120.64 8267.51 1180.0 8268.5 1180.0 8268.5
   smooth off
 endline
 
-line wall -close on -reverse on
+line wall -close on
   965.5 8535.5
   974.0 8543.5 973.5 8574.0 1021.5 8566.0
   smooth off
@@ -514,6 +514,7 @@ endline
 
 area clay
   l124-1123-8346
+  est_wall
 endarea
 
 point 1177.6369291338583 8548.66905511811 station -name 1.44

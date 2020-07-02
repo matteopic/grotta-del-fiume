@@ -1,0 +1,6 @@
+encoding  utf-8
+input "RamoDellAria.th" 
+input "cimitero_cocoriti.th" 
+
+# Congiunzione poligonale dal cimitero a stretta dei cocoriti
+equate 1.0@ramo_aria PA1@cocoriti_cimitero

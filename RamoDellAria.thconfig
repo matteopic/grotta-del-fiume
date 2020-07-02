@@ -1,5 +1,5 @@
 encoding  utf-8
-source "RamoDellAria.th" 
+source index.th
 
 # init plan file
 # export map -projection plan -output RamoDellariaPlan.th2
@@ -7,31 +7,48 @@ source "RamoDellAria.th"
 
 ## MAPS ##
 
+layout print_centerline
+code metapost
+
+  def l_survey_cave (expr P) =
+    T:=identity;
+    pair zz[];
+    pickup PenC;
+    for t = 0 upto length P - 1:
+      zz1 := point t of P;
+      zz2 := point t+1 of P;
+      draw zz1 -- zz2 withcolor (0.1,0.1,0.1);
+    endfor;
+  enddef;
+endlayout
+
 layout L100
   doc-title "Ramo dell'Aria"
   scale 1 100
   layers on
+  
+  colour map-fg [80 80 80]
+  
+  #debug all
   
   # enable for debug
   #color map-fg [100 0 0]
   #color map-bg [0 0 100]
 endlayout
 
-# choose which maps to export. default: all maps
-#select map_plan
+# Choose which maps to export. default: all maps
+# select map_plan
 
-export map -projection plan      -layout L100 -output "out/RamoDellAria_plant.pdf"
-export map -projection elevation -layout L100 -output "out/RamoDellAria_section.pdf"
+# PDF
+export map -projection plan      -layout L100 -layout print_centerline -output "out/RamoDellAria_plant.pdf"
+export map -projection extended  -layout L100 -layout print_centerline -output "out/RamoDellAria_section.pdf"
 
+# Google Earth
+export map -projection plan      -output "out/RamoDellAria_plant.kml"
+export model                     -output "out/RamoDellAria_poligonale.kml"
 
+# Loch
+export model                     -output "out/RamoDellAria.lox"
 
-## 3D Models ##
-
-
-### Loch ###
-
-export model -output "out/RamoDellAria.lox"
-
-### Aven Survex -  https://survex.com/ ###
-
-export model -output "out/RamoDellAria.3d"
+# Aven Survex -  https://survex.com/
+export model                     -output "out/RamoDellAria.3d"

@@ -1,0 +1,30 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 1466.5826771653542 1072.8818897637793
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {520.6692913385825 1 1.0} {408.4645669291338 6.23} {da pozzo sposo_e.xvi} 0 {}
+
+
+
+scrap sposo_S1 -projection extended -scale [0 0 2794.0 -4.0 0.0 0.0 40.64 0.0 m]
+
+point 1075.7492913385827 809.8045669291338 station -name 7.9
+
+point 1005.4292913385825 772.5245669291338 station -name 7.8
+
+point 1168.3492913385826 416.2645669291338 station -name 7.6
+
+point 1085.1992913385825 369.8445669291338 station -name 7.5
+
+point 1016.2192913385825 308.0345669291338 station -name 7.4
+
+point 930.7092913385825 317.6745669291338 station -name 7.3
+
+point 786.9692913385825 430.8645669291338 station -name 7.2
+
+point 627.4792913385825 440.9445669291338 station -name 7.1
+
+point 520.6692913385825 408.4645669291338 station -name 7.0
+
+endscrap
+
+

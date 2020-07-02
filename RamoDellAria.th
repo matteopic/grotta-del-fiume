@@ -1,5 +1,7 @@
 encoding  utf-8
-centreline
+survey ramo_aria -title "Ramo dell'Aria"
+
+centreline -id poly_ramo_nuovo
   date 2005.07.09
   data normal from to compass clino tape
   extend right
@@ -212,7 +214,7 @@ centreline
 endcentreline
 
 
-centreline
+centreline -id poly_ramo_alto
   date 2005.07.09
   data normal from to compass clino tape
   extend right
@@ -398,7 +400,7 @@ centreline
 endcentreline
 
 
-centreline
+centreline -id poly_mery
   date 2005.07.09
   data normal from to compass clino tape
   extend right
@@ -499,7 +501,7 @@ centreline
 endcentreline
 
 
-centreline
+centreline -id poly_pozzo_dello_sposo
   date 2005.07.09
   data normal from to compass clino tape
   extend right
@@ -562,7 +564,7 @@ centreline
   7.9 - 307.33 -69.09 1.039
 endcentreline
 
-centreline
+centreline -id poly_fondo
   date 2005.07.09
   data normal from to compass clino tape
   extend right
@@ -674,20 +676,9 @@ centreline
 endcentreline
 
 
-# Unisco il rilevo "pozzo dello sposo" con "fine"
-# Valutare l'uso di "equate"
-centreline
-  date 2020.06.27
-  data normal from to compass clino tape
-  extend right
-  7.9 FONDO1.0 0 0 0
-endcentreline
+# Congiunzione "Pozzo dello sposo" con "fine"
+equate 7.9 FONDO1.0
 
-# Imposto le coordinate geografiche
-centreline
-  cs UTM32
-  fix 1.0  335069  4806922 430
-endcentreline
 
 # SURFACE #
 
@@ -705,7 +696,6 @@ map map_plan -title "Global Map"
   ramo_nuovo
   ramo_nuovo_underlying
   ramo_alto
-  ramo_alto_poligonale
   mery
   pozzo_sposo
   fine
@@ -714,9 +704,17 @@ endmap
 
 
 input "RamoDellAria_Section1.th2"
+input "RamoDellAria_Section2.th2"
+input "RamoDellAria_Section3.th2"
+input "RamoDellAria_Section4.th2"
 input "RamoDellAria_Section5.th2"
 map map_section -title "Global Section"
   ramo_nuovo_S1
   ramo_nuovo_S2
+  ramo_alto_S1
+  mery_S1
+  sposo_S1
   fine_S1
 endmap
+
+endsurvey
