@@ -187,6 +187,7 @@ survey cocoriti_cimitero -title ""
    extend right PA88 PA89
    PA89 PA90 342.44 -5.28 8.35 0.00 0.00 0.00 0.00
    extend right PA89 PA90
+   flags surface
    PA90 PA91 21.76 -16.99 1.80 0.00 0.00 0.00 0.00
    extend right PA90 PA91
    PA91 PA92 48.71 -17.63 2.15 0.00 0.00 0.00 0.00
