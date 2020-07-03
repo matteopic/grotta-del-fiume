@@ -232,6 +232,6 @@ survey cocoriti_cimitero -title ""
   # Imposto le coordinate geografiche
 	centreline
 	  cs UTM33
-	  fix PA110  335424.41  4807498.80 211
+	  fix PA110  335468.25  4807506.86 211
 	endcentreline
 endsurvey
