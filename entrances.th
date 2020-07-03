@@ -1,0 +1,26 @@
+encoding utf-8
+survey entrances
+
+  centerline
+    station  8MAAN "Grotta del Fiume" entrance
+  endcenterline
+
+  centerline
+    station 458MAAN "Grotta del Fosso Riccio" entrance
+    cs UTM33
+    fix 458MAAN  335152.44 4807135.59 370
+  endcenterline
+
+  centerline
+    station 228MAAN "Grotta della Cova di Fosso Riccio" entrance
+    cs UTM33
+    fix 228MAAN  335091.45 4807170.59 334
+  endcenterline
+
+  centerline
+    station 163MAAN "Grotta sul Secondo Canalone" entrance
+    cs UTM33
+    fix 163MAAN  335198.44 4807108.59 436
+  endcenterline
+
+endsurvey
