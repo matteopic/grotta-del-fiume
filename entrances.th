@@ -2,25 +2,52 @@ encoding utf-8
 survey entrances
 
   centerline
-    station  8MAAN "Grotta del Fiume" entrance
+    station 8MAAN "Grotta del Fiume" entrance
   endcenterline
+
+
+# Coordinates of following entrances has been taken from http://www.ambiente.marche.it/Ambiente/Natura/Turismosostenibile/CatastoGrotte.aspx 
 
   centerline
     station 458MAAN "Grotta del Fosso Riccio" entrance
     cs UTM33
-    fix 458MAAN  335152.44 4807135.59 370
+    fix 458MAAN 335152.44 4807135.59 370
   endcenterline
 
   centerline
     station 228MAAN "Grotta della Cova di Fosso Riccio" entrance
     cs UTM33
-    fix 228MAAN  335091.45 4807170.59 334
+    fix 228MAAN 335091.45 4807170.59 334
   endcenterline
 
   centerline
     station 163MAAN "Grotta sul Secondo Canalone" entrance
     cs UTM33
-    fix 163MAAN  335198.44 4807108.59 436
+    fix 163MAAN 335198.44 4807108.59 436
+  endcenterline
+
+  centerline
+    station 24MAAN "Caverna della Fatichiana" entrance
+    cs UTM33
+    fix 24MAAN 335028.45 4807040.60 440
+  endcenterline
+
+  centerline
+    station 161MAAN "Grotta del Paradiso" entrance
+    cs UTM33
+    fix 161MAAN 335141.44 4807079.60 435
+  endcenterline
+
+  centerline
+    station 182MAAN "Buco delle Tribolazioni" entrance
+    cs UTM33
+    fix 182MAAN 335082.45 4807049.60 459
+  endcenterline
+
+  centerline
+    station 384MAAN "Grotta dell'Orso Bruno" entrance
+    cs UTM33
+    fix 384MAAN 335139.44 4807110.59 401
   endcenterline
 
 endsurvey
