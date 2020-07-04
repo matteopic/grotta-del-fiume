@@ -1,8 +1,5 @@
 encoding  utf-8
 input "RamoDellAria.th" 
-input "cimitero_cocoriti.th" 
 input "entrances.th" 
 
-# Congiunzione poligonale dal cimitero a stretta dei cocoriti
-equate 1.0@ramo_aria PA1@cocoriti_cimitero
-equate 8MAAN@entrances PA90@cocoriti_cimitero
+equate 8MAAN@entrances PA90@ramo_aria

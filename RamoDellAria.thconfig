@@ -1,10 +1,6 @@
 encoding  utf-8
 source index.th
 
-# init plan file
-# export map -projection plan -output cimitero_cocoriti.th2
-
-
 ## MAPS ##
 
 layout print_centerline
