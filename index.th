@@ -1,5 +1,7 @@
 encoding  utf-8
 input "RamoDellAria.th" 
+input "da_ingresso_a_pozzo_dei_cristalli.th"
 input "entrances.th" 
 
 equate 8MAAN@entrances PA90@ramo_aria
+equate 1.0@da_ingresso_a_pozzo_dei_cristalli PA90@ramo_aria
