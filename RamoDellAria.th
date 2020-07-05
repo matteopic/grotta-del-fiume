@@ -927,7 +927,7 @@ input "RamoDellAria_Plan2.th2"
 input "RamoDellAria_Plan3.th2"
 input "RamoDellAria_Plan4.th2"
 input "RamoDellAria_Plan5.th2"
-map map_plan -title "Global Map"
+map ramo_aria_plant_map -title "Grotta del Fiume - Ramo dell'Aria - Pianta"
   ramo_nuovo
   ramo_nuovo_underlying
   ramo_alto
@@ -943,7 +943,7 @@ input "RamoDellAria_Section2.th2"
 input "RamoDellAria_Section3.th2"
 input "RamoDellAria_Section4.th2"
 input "RamoDellAria_Section5.th2"
-map map_section -title "Global Section"
+map ramo_aria_section_map -title "Grotta del Fiume - Ramo dell'Aria - Sezione"
   ramo_nuovo_S1
   ramo_nuovo_S2
   ramo_alto_S1

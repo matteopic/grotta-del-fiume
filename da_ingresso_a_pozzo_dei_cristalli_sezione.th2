@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 5668.5 1545.322834645669
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -129.0 -129.0 5666.75 1545.322834645669
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {167.24409448818895 1 1.0} {68.34645669291338 1.0} pocket-topo/da_ingresso_a_pozzo_cristalli_e.xvi 0 {}
 
 
@@ -115,10 +115,23 @@ line wall
   smooth off
   5204.75 431.5 5165.25 481.75 5206.5 474.0
   smooth off
+  subtype pit
   5194.75 236.5
 endline
 
-line wall
+point 5475.5 1023.5 traverse
+
+point 5315.0 986.0 traverse
+
+point 5079.0 985.5 traverse
+
+point 5022.5 984.0 traverse
+
+point 5004.5 985.5 rope
+
+point 151.75 59.25 entrance
+
+line wall -reverse on
   22.0 38.25
   22.0 38.25 84.25 74.75 94.5 84.0
   smooth off
@@ -229,6 +242,7 @@ line wall
   smooth off
   5344.26 523.09 5287.75 481.0 5287.75 481.0
   smooth off
+  subtype pit
   5275.75 235.5
 endline
 
@@ -269,6 +283,14 @@ point 769.4140944881889 79.52645669291337 station -name 1.2
 point 431.4940944881889 65.15645669291338 station -name 1.1
 
 point 167.24409448818895 68.34645669291338 station -name 1.0
+
+line rock-border
+  758.75 57.25
+  761.0 66.25 753.5 71.5 769.25 77.25
+  smooth off
+  779.0 71.0 779.75 64.75 780.0 56.75
+  smooth off
+endline
 
 endscrap
 

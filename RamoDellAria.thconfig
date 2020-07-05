@@ -18,11 +18,11 @@ code metapost
   enddef;
 endlayout
 
-layout L100
-  doc-title "Ramo dell'Aria"
+layout grotta_fiume_layout
+  doc-title "Grotta del Fiume"
   scale 1 100
   layers on
-  
+
   colour map-fg [80 80 80]
   
   #debug all
@@ -32,12 +32,27 @@ layout L100
   #color map-bg [0 0 100]
 endlayout
 
-# Choose which maps to export. default: all maps
-# select map_plan
+layout ramo_aria_layout
+  doc-title "Grotta del Fiume - Ramo dell'Aria"
+  scale 1 100
+  layers on
+  
+  colour map-fg [80 80 80]
+endlayout
 
 # PDF
-export map -projection plan      -layout L100 -layout print_centerline -output "out/RamoDellAria_plant.pdf"
-export map -projection extended  -layout L100 -layout print_centerline -output "out/RamoDellAria_section.pdf"
+#export map -projection plan      -layout grotta_fiume_layout -layout print_centerline -output "out/Grotta del Fiume - pianta.pdf"
+
+#select ingresso_pianta_map@da_ingresso_a_pozzo_dei_cristalli
+#select ingresso_sezione_map@da_ingresso_a_pozzo_dei_cristalli
+#export map -projection plan      -layout grotta_fiume_layout -layout print_centerline -output "out/Grotta del Fiume - Ingresso - pianta.pdf"
+#export map -projection extended  -layout grotta_fiume_layout -layout print_centerline -output "out/Grotta del Fiume - Ingresso - sezione.pdf"
+
+#select ramo_aria_plant_map@ramo_aria
+#select ramo_aria_section_map@ramo_aria
+#export map -projection plan      -layout ramo_aria_layout -layout print_centerline -output "out/Grotta del Fiume - Ramo dell'Aria - pianta.pdf"
+#export map -projection extended  -layout ramo_aria_layout -layout print_centerline -output "out/Grotta del Fiume - Ramo dell'Aria - sezione.pdf"
+
 
 # Google Earth
 export map -projection plan      -output "out/RamoDellAria_plant.kml"

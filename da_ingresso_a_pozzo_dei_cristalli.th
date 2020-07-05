@@ -1,5 +1,5 @@
 encoding  utf-8
-survey da_ingresso_a_pozzo_dei_cristalli
+survey da_ingresso_a_pozzo_dei_cristalli -title "Ingresso - Pozzo dei cristalli"
 centreline
   team "Matteo Piccinini"
   team "Mirco Molinari"
@@ -179,7 +179,6 @@ centreline
   1.11 - 20.65 -35.02 6.342
   1.11 - 309.53 -32.92 2.422
   1.11 1.12 218.04 18.98 6.740
-  mark 1.12 fixed
   1.12 - 347.69 2.34 7.114
   1.12 - 347.36 3.03 10.555
   1.12 - 323.25 12.67 7.658
@@ -306,6 +305,7 @@ centreline
   1.17 - 152.07 28.26 7.935
   1.17 - 159.28 5.57 7.393
   1.17 1.18 174.33 49.76 18.328
+  mark 1.12 fixed
 endcentreline
 
 input "da_ingresso_a_pozzo_dei_cristalli_pianta.th2"
@@ -314,8 +314,9 @@ map ingresso_pianta_map
 endmap
 
 input "da_ingresso_a_pozzo_dei_cristalli_sezione.th2"
-#map ingresso_sezione_map
-#  ingresso_sezione
-#endmap
+map ingresso_sezione_map
+  ingresso_sezione
+endmap
 
 endsurvey
+
