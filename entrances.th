@@ -50,4 +50,22 @@ survey entrances
     fix 384MAAN 335139.44 4807110.59 401
   endcenterline
 
+  centerline
+    station 461MAAN "Grotta del Trosciò" entrance
+    cs UTM33
+    fix 461MAAN 335303.44 4807022.60 452
+  endcenterline
+
+  centerline
+    station 80MAAN "Caverna delle Terme" entrance
+    cs UTM33
+    fix 80MAAN 335469.43 4806987.60 350
+  endcenterline
+
+  centerline
+    station 22MAAN "Buco del Diavolo" entrance
+    cs UTM33
+    fix 22MAAN 335391.43 4806671.61 562
+  endcenterline
+
 endsurvey

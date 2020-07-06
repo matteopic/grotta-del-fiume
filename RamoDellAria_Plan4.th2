@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 1294.0 3195.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -132.0 -132.0 1296.0 3197.0
+##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {528.3462204724409 1 1.0} {2469.0825984251965 7.0} {da pozzo sposo_p.xvi} 0 {}
 
 
@@ -98,16 +98,28 @@ point 528.3462204724409 2469.0825984251965 station -id S7.0 -name 7.0
 
 point 531.5362204724408 2575.8625984251967 station -name 7.1
 
-point 119.0 2553.5 section -scrap pozzo_sposo_section -align top
+line pit -close on
+  494.0 2434.5
+  494.5 2419.0 547.46 2399.07 544.5 2432.0
+  540.99 2471.05 493.43 2452.02 494.0 2434.5
+endline
+
+line map-connection
+  310.5 2596.0
+  416.0 2580.0
+endline
+
+point 273.5 2668.5 section -scrap pozzo_sposo_section -align bottom-left
 
 line section -direction both
   480.0 2583.0
   519.41 2576.18 705.09 2540.32 744.5 2533.5
+  smooth off
 endline
 
 point 436.25 2578.25 label -id lblSection1 -text "Sez: B" -align bottom-right
 
-point 79.0 2551.0 label -id lblSection2 -text "Sez: B" -align top
+point 292.5 2601.5 label -id lblSection2 -text "Sez: B" -align top
 
 endscrap
 

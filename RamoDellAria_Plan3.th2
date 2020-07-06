@@ -1,13 +1,13 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -144.0 -144.0 1408.0 4432.72440944882
-##XTHERION## xth_me_area_zoom_to 48
+##XTHERION## xth_me_area_adjust -132.16666666666666 -132.16666666666666 1397.7916666666667 4432.72440944882
+##XTHERION## xth_me_area_zoom_to 192
 ##XTHERION## xth_me_image_insert {161.2994488188976 1 1.0} {2145.318976377953 5.27} {da stretta mery_p.xvi} 0 {}
 
 
 
 scrap mery -projection plan -scale [-128.0 2108.7244094488187 2057.1338582677163 2108.7244094488187 0.0 0.0 55.502399999999994 0.0 m]
 
-line wall
+line wall -reverse on
   274.0 2787.5
   265.75 2776.75 257.75 2763.75 243.75 2752.0
   smooth off
@@ -78,6 +78,21 @@ line wall
   161.5 2562.5 157.75 2553.75 157.75 2553.75
   smooth off
   141.5 2544.75 144.0 2551.0 132.5 2535.0
+  smooth off
+endline
+
+line wall -reverse on -subtype unsurveyed
+  804.1666666666667 3103.125
+  804.1666666666667 3103.125 774.78 3051.02 750.0 3054.6875
+  735.94 3056.77 758.5 3104.0 758.5 3104.0
+  smooth off
+endline
+
+line wall -close on -subtype unsurveyed
+  888.5416666666667 2964.5833333333335
+  888.5416666666667 2964.5833333333335 785.94 2983.85 827.6041666666667 2896.875
+  smooth off
+  884.38 2833.33 939.06 2941.67 888.5416666666667 2964.5833333333335
   smooth off
 endline
 
@@ -174,7 +189,7 @@ line wall
   943.0 3171.0
 endline
 
-line wall -id toclean
+line wall -id toclean -reverse on
   43.0 2962.0
   50.0 2982.25 79.0 3031.75 82.75 3050.0
   smooth off
@@ -229,6 +244,14 @@ line wall -id toclean
 endline
 
 point 906.4994488188977 3239.9589763779527 station -name 6.15
+
+line chimney -close on -reverse on
+  1002.6 3491.93
+  1002.6 3491.93 1023.44 3523.96 1035.4166666666667 3504.166666666667
+  smooth off
+  1054.17 3479.69 1018.23 3467.45 1002.6 3491.93
+  smooth off
+endline
 
 point 127.1694488188976 2246.4989763779527 station -id S6.3 -name 6.3
 

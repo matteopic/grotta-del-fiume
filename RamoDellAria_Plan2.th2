@@ -1,19 +1,19 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 1820.9133858267714 7237.5
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -129.0 -129.0 1820.9133858267714 7236.5
+##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {64.17236220472432 1 1.0} {4824.74433070866 1.53} {ramo alto_p.xvi} 0 {}
 
 
 
 scrap ramo_alto -projection plan -scale [-128.0 2108.7244094488187 2057.1338582677163 2108.7244094488187 0.0 0.0 55.502399999999994 0.0 m]
 
-line wall
+line wall -subtype unsurveyed
   1075.0 6871.5
   944.5 6960.5 1092.0 7075.5 1110.5 7099.5
   smooth off
 endline
 
-line chimney -close on
+line pit -close on
   67.25 4815.5
   76.25 4836.5 88.75 4823.25 88.75 4823.25
   smooth off
@@ -23,7 +23,7 @@ line chimney -close on
   smooth off
 endline
 
-line chimney -close on -reverse on
+line pit -close on
   92.25 5117.25
   103.25 5105.5 119.75 5113.75 119.75 5113.75
   smooth off
@@ -45,7 +45,7 @@ line section
   smooth off
 endline
 
-line wall
+line wall -reverse on -subtype unsurveyed
   974.0 6823.5
   963.0 6851.5 945.5 6849.0 945.5 6873.0
   smooth off
@@ -53,33 +53,32 @@ line wall
   smooth off
   1013.5 7011.5 1105.5 7107.5 1105.5 7107.5
   smooth off
+  subtype unsurveyed
 endline
 
-line wall -subtype presumed
+line wall -reverse on -subtype pit
   1080.5 6862.5
   1080.5 6862.5 1097.0 6908.0 1115.0 6940.5
   smooth off
   1141.0 6964.5 1176.0 6979.5 1199.5 6986.0
   smooth off
-  1211.5 6930.0 1101.0 6805.5 1101.0 6805.5
+  1211.5 6930.0 1095.25 6797.0 1095.25 6797.0
   smooth off
 endline
 
 line wall -subtype presumed
   101.5 4815.5
-  216.25 4877.25 279.0 4937.5 305.25 4983.0
+  206.5 4897.0 277.0 4956.5 279.0 4959.5
   smooth off
-  312.08 5022.41 114.75 4892.0 114.75 4892.0
+  261.0 4973.0 108.0 4861.0 108.0 4861.0
   smooth off
 endline
 
-line wall -subtype presumed
+line wall -subtype unsurveyed
   788.0 6063.5
-  828.0 6070.25 854.5 6090.0 880.25 6099.5
+  830.0 6085.25 875.5 6097.0 877.0 6104.5
   smooth off
-  880.25 6099.5 886.0 6104.5 888.0 6116.0
-  smooth off
-  843.25 6109.25 804.0 6093.75 804.0 6093.75
+  871.75 6107.5 803.5 6092.75 803.5 6092.75
   smooth off
 endline
 
@@ -137,7 +136,7 @@ line wall
   smooth off
 endline
 
-line wall -subtype clay
+line wall -subtype unsurveyed
   569.0 5958.5
   569.0 5958.5 555.5 5991.75 572.25 5998.5
   smooth off
@@ -145,8 +144,9 @@ line wall -subtype clay
   smooth off
 endline
 
-line wall
+line wall -id alto_line_left -reverse on
   29.25 4852.5
+  mark alto_join
   70.5 4963.0
   70.5 4963.0 96.0 5035.75 81.0 5073.25
   smooth off
@@ -176,17 +176,25 @@ line wall
   569.0 5958.5
 endline
 
+line chimney -close on -reverse on
+  1125.5 6816.0
+  1136.5 6835.5 1144.5 6843.5 1155.0 6822.5
+  smooth off
+  1159.5 6804.5 1136.5 6808.5 1125.5 6816.0
+  smooth off
+endline
+
 line wall -close on -reverse on
   789.75 6630.75
   763.5 6610.75 794.75 6602.25 794.75 6602.25
   smooth off
-  810.0 6602.25 814.0 6617.75 814.0 6617.75
+  810.0 6602.25 814.5 6618.0 814.5 6618.0
   smooth off
-  814.0 6617.75 806.25 6640.5 789.75 6630.75
+  814.5 6618.0 806.25 6640.5 789.75 6630.75
   smooth off
 endline
 
-line wall
+line wall -id alto_line_right -reverse on
   817.0 6692.0
   844.0 6696.75 843.75 6710.0 852.5 6716.0
   smooth off
@@ -194,10 +202,12 @@ line wall
   smooth off
   952.25 6772.75 958.5 6793.75 974.0 6823.5
   smooth off
+  subtype pit
   986.75 6892.75 1075.0 6871.5 1075.0 6871.5
   smooth off
   1137.5 6777.5 1043.0 6728.5 1043.0 6728.5
   smooth off
+  subtype bedrock
   991.25 6713.0 966.0 6687.5 966.0 6687.5
   smooth off
   936.25 6644.75 900.75 6649.75 879.0 6635.5

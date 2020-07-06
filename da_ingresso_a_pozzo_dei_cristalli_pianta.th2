@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -132.0 2187.0 4105.0
-##XTHERION## xth_me_area_zoom_to 400
+##XTHERION## xth_me_area_adjust -130.0 -130.0 2185.0 4104.377952755905
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {517.3228346456692 1 1.0} {3855.11811023622 1.0} pocket-topo/da_ingresso_a_pozzo_cristalli_p.xvi 0 {}
 
 
@@ -9,11 +9,16 @@ scrap ingresso_pianta -projection plan -scale [-128.0 -128.0 2175.2440944881887 
 
 point 546.75 3958.25 entrance -orientation 200 -align bottom
 
-point 275.0 3580.5 section -scrap ingresso_section2
+point 275.0 3580.5 section -scrap ingresso_section2 -align top-left
+
+line map-connection
+  377.75 3454.75
+  265.0 3563.5
+endline
 
 line section -direction both
-  672.0 3342.5
-  634.05 3355.13 433.45 3421.87 395.5 3434.5
+  631.75 3393.25
+  592.43 3400.61 426.75 3433.54 387.5 3441.25
   smooth off
 endline
 
@@ -22,6 +27,11 @@ point 1779.6828346456691 24.178110236220164 station -name 1.18
 point 1733.6628346456691 488.0281102362201 station -name 1.17
 
 point 1643.1528346456691 497.5581102362203 station -name 1.16
+
+line map-connection
+  1392.0 725.0
+  1929.0 906.0
+endline
 
 point 1309.0928346456692 693.5081102362201 station -name 1.15
 
@@ -363,12 +373,16 @@ line wall
   428.0 2500.0
 endline
 
-point 799.5 3758.5 section -scrap ingresso_section1
+point 826.5 3774.5 section -scrap ingresso_section1 -align top-right
+
+line map-connection
+  759.0 3714.0
+  820.25 3764.75
+endline
 
 line section -reverse on -direction both
-  566.0 3584.5
-  599.66 3606.11 694.34 3666.89 728.0 3688.5
-  smooth off
+  552.0 3571.0
+  584.82 3593.87 707.18 3679.13 740.0 3702.0
 endline
 
 point 1656.0 829.5 section -scrap cristalli_section -align top-right

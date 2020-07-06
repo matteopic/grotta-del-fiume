@@ -920,6 +920,9 @@ equate 1.0 PA1
 input "RamoDellAria_Surface.th"
 
 
+join meduse_line:2 alto_line_left:0
+join meduse_line:1 alto_line_right:end
+
 # MAPS #
 
 input "RamoDellAria_Plan1.th2"
@@ -927,14 +930,55 @@ input "RamoDellAria_Plan2.th2"
 input "RamoDellAria_Plan3.th2"
 input "RamoDellAria_Plan4.th2"
 input "RamoDellAria_Plan5.th2"
-map ramo_aria_plant_map -title "Grotta del Fiume - Ramo dell'Aria - Pianta"
-  ramo_nuovo
-  ramo_nuovo_underlying
+
+map m1
   ramo_alto
+endmap
+map m2
+  ramo_nuovo
+endmap
+map m3
+  meduse
+endmap
+map m4
+  sala_meduse
+endmap
+map m5
+  sala_meduse_sotto
+endmap
+map m6
   mery
-  pozzo_sposo
   fine
   budello_uscita
+  break
+  pozzo_sposo
+endmap
+
+map high_level
+  m1
+  m3
+endmap
+
+map medium_level
+  m2 
+  m4
+  m6
+endmap
+
+map lower_level
+  m5  [15 0 m] none
+endmap
+
+map ramo_aria_plan_map -title "Grotta del Fiume - Ramo dell'Aria - Pianta"
+  high_level
+
+  break
+
+  medium_level
+
+  break
+
+  lower_level
 endmap
 
 
@@ -944,12 +988,16 @@ input "RamoDellAria_Section3.th2"
 input "RamoDellAria_Section4.th2"
 input "RamoDellAria_Section5.th2"
 map ramo_aria_section_map -title "Grotta del Fiume - Ramo dell'Aria - Sezione"
-  ramo_nuovo_S1
   ramo_nuovo_S2
+  break
+  ramo_nuovo_S1
   ramo_alto_S1
+  ramo_alto_S2
   mery_S1
   sposo_S1
+  sposo_S2
   fine_S1
 endmap
 
 endsurvey
+
