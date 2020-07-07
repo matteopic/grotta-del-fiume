@@ -351,7 +351,11 @@ line wall
   smooth off
 endline
 
-point 394.0 2973.0 entrance
+point 108.0 2650.5 bat
+
+point 78.5 2761.0 bat
+
+point 94.0 2716.0 bat
 
 line chimney -close on
   376.0 2986.0
@@ -383,6 +387,7 @@ endline
 line section -reverse on -direction both
   552.0 3571.0
   584.82 3593.87 707.18 3679.13 740.0 3702.0
+  smooth off
 endline
 
 point 1656.0 829.5 section -scrap cristalli_section -align top-right
@@ -392,7 +397,7 @@ line section -direction both
   1270.0 625.5
 endline
 
-line pit -id pozzo_dei_cristalli -close on -height 18
+line pit -id pozzo_dei_cristalli -close on
   1861.0 290.5
   1824.25 287.0 1832.25 252.25 1841.5 214.5
   smooth off
