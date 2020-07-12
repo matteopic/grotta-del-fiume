@@ -1,5 +1,8 @@
-Ramo dell'Aria
-==============
+Grotta del Fiume survey
+=======================
+
+![3D result](result.png)
+
 
 Requirements
 ------------
@@ -19,6 +22,8 @@ on Windows you can just double click on `build.bat`,
 on other platforms
 
 	mkdir out
+	/path/to/therion GrottaDelFiume.thconfig
+	/path/to/therion Ingresso.thconfig
 	/path/to/therion RamoDellAria.thconfig
 
 output files will be availabe in the `out` directory
