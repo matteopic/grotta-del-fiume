@@ -1,0 +1,38 @@
+encoding  utf-8
+source index.th
+
+## MAPS ##
+layout grotta_fiume_layout
+  doc-title "Grotta del Fiume"
+  scale 1 500
+  layers on
+
+  # Disattiva le etichette
+  symbol-hide point label
+  symbol-hide point height
+
+  # Disattiva le sezioni
+  symbol-hide point section
+  symbol-hide line section
+  symbol-hide line map-connection
+
+  # Disattiva i capisaldi
+  symbol-hide point station
+  symbol-hide line survey
+endlayout
+
+
+# PDF
+export map -projection plan       -layout grotta_fiume_layout -output "out/Grotta del Fiume - pianta.pdf"
+export map -projection extended   -layout grotta_fiume_layout -output "out/Grotta del Fiume - sezione.pdf"
+export atlas -projection plan     -layout grotta_fiume_layout -output "out/Grotta del Fiume - atlante - pianta.pdf"
+
+# Google Earth
+#export map -projection plan      -output "out/Grotta del Fiume - pianta.kml"
+#export model                     -output "out/Grotta del Fiume - poligonale.kml"
+
+# Loch
+export model                     -output "out/Grotta del Fiume.lox"
+
+# Aven Survex -  https://survex.com/
+export model                     -output "out/Grotta del Fiume.3d"

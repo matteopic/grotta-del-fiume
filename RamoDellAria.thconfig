@@ -18,20 +18,6 @@ code metapost
   enddef;
 endlayout
 
-layout grotta_fiume_layout
-  doc-title "Grotta del Fiume"
-  scale 1 100
-  layers on
-
-  colour map-fg [80 80 80]
-  
-  #debug all
-  
-  # enable for debug
-  #color map-fg [100 0 0]
-  #color map-bg [0 0 100]
-endlayout
-
 layout ramo_aria_layout
   doc-title "Grotta del Fiume - Ramo dell'Aria"
   scale 1 100
@@ -42,31 +28,34 @@ layout ramo_aria_layout
 
   statistics topo-length on
   statistics explo-length on
-  #debug all
-  #colour map-fg [80 80 80]
+  colour-legend on
+  colour map-fg scrap
 endlayout
 
+lookup scrap
+sala_meduse@ramo_aria [0 100 0] "Sala delle meduse"
+sala_meduse_sotto@ramo_aria [100 0 0] "Sala delle medusa - piano inferiore"
+meduse@ramo_aria [100 50 0] "Meduse"
+ramo_alto@ramo_aria [0 50 100] "Ramo alto"
+mery@ramo_aria [100 50 100] "Mery"
+pozzo_sposo@ramo_aria [0 30 0] "Pozzo dello sposo"
+fine@ramo_aria [50 50 0] "Fondo"
+budello_uscita@ramo_aria [50 50 0] "Fondo"
+endlookup
+
+
 # PDF
-#export map -projection plan      -layout grotta_fiume_layout -layout print_centerline -output "out/Grotta del Fiume - pianta.pdf"
-
-#select ingresso_pianta_map@da_ingresso_a_pozzo_dei_cristalli
-#select ingresso_sezione_map@da_ingresso_a_pozzo_dei_cristalli
-#export map -projection plan      -layout grotta_fiume_layout -layout print_centerline -output "out/Grotta del Fiume - Ingresso - pianta.pdf"
-#export map -projection extended  -layout grotta_fiume_layout -layout print_centerline -output "out/Grotta del Fiume - Ingresso - sezione.pdf"
-
-#select ramo_aria_plan_map@ramo_aria
-#select ramo_aria_section_map@ramo_aria
-#export map -projection plan      -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - pianta.pdf"
-#export map -projection extended -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - sezione.pdf"
-#export atlas -projection plan    -layout ramo_aria_layout -output "out/Grotta del Fiume - atlante - pianta.pdf"
-
+select ramo_aria_plan_map@ramo_aria
+select ramo_aria_section_map@ramo_aria
+export map -projection plan      -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - pianta.pdf"
+export map -projection extended  -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - sezione.pdf"
 
 # Google Earth
-#export map -projection plan      -output "out/RamoDellAria_plant.kml"
-#export model                     -output "out/RamoDellAria_poligonale.kml"
+#export map -projection plan      -output "out/Grotta del Fiume - Ramo dell'Aria - pianta.kml"
+#export model                     -output "out/Grotta del Fiume - Ramo dell'Aria - poligonale.kml"
 
 # Loch
-#export model                     -output "out/RamoDellAria.lox"
+#export model                     -output "out/Grotta del Fiume - Ramo dell'Aria.lox"
 
 # Aven Survex -  https://survex.com/
-#export model                     -output "out/RamoDellAria.3d"
+#export model                     -output "out/Grotta del Fiume - Ramo dell'Aria.3d"
