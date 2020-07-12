@@ -9,3 +9,6 @@ equate 8MAAN@entrances PA90@ramo_aria
 
 input "fuoco_fossile/fuoco_fossile.th"
 equate 56@fuoco_fossile 1.18@da_ingresso_a_pozzo_dei_cristalli
+
+input "rinoceronte-tarlo/index.th"
+equate 1.32@rinoceronte-tarlo PA70@ramo_aria
