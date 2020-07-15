@@ -1,71 +1,67 @@
 encoding utf-8
-survey entrances
-
-  centerline
+  centreline
     station 8MAAN "Grotta del Fiume" entrance
-  endcenterline
+  endcentreline
 
 
 # Coordinates of following entrances has been taken from http://www.ambiente.marche.it/Ambiente/Natura/Turismosostenibile/CatastoGrotte.aspx 
 
-  centerline
+  centreline
     station 458MAAN "Grotta del Fosso Riccio" entrance
     cs UTM33
     fix 458MAAN 335152.44 4807135.59 370
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 228MAAN "Grotta della Cova di Fosso Riccio" entrance
     cs UTM33
     fix 228MAAN 335091.45 4807170.59 334
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 163MAAN "Grotta sul Secondo Canalone" entrance
     cs UTM33
     fix 163MAAN 335198.44 4807108.59 436
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 24MAAN "Caverna della Fatichiana" entrance
     cs UTM33
     fix 24MAAN 335028.45 4807040.60 440
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 161MAAN "Grotta del Paradiso" entrance
     cs UTM33
     fix 161MAAN 335141.44 4807079.60 435
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 182MAAN "Buco delle Tribolazioni" entrance
     cs UTM33
     fix 182MAAN 335082.45 4807049.60 459
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 384MAAN "Grotta dell'Orso Bruno" entrance
     cs UTM33
     fix 384MAAN 335139.44 4807110.59 401
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 461MAAN "Grotta del Trosciò" entrance
     cs UTM33
     fix 461MAAN 335303.44 4807022.60 452
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 80MAAN "Caverna delle Terme" entrance
     cs UTM33
     fix 80MAAN 335469.43 4806987.60 350
-  endcenterline
+  endcentreline
 
-  centerline
+  centreline
     station 22MAAN "Buco del Diavolo" entrance
     cs UTM33
     fix 22MAAN 335391.43 4806671.61 562
-  endcenterline
-
-endsurvey
+  endcentreline

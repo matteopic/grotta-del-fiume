@@ -1,14 +1,16 @@
 encoding  utf-8
-input "RamoDellAria.th" 
 
 input "da_ingresso_a_pozzo_dei_cristalli.th"
 equate 1.0@da_ingresso_a_pozzo_dei_cristalli PA90@ramo_aria
 
 input "entrances.th" 
-equate 8MAAN@entrances PA90@ramo_aria
+equate 8MAAN PA90@ramo_aria
 
 input "fuoco_fossile/fuoco_fossile.th"
 equate 56@fuoco_fossile 1.18@da_ingresso_a_pozzo_dei_cristalli
 
 input "rinoceronte-tarlo/index.th"
 equate 1.32@rinoceronte-tarlo PA70@ramo_aria
+
+
+input "RamoDellAria.th" 
