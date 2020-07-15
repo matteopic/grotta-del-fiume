@@ -962,11 +962,12 @@ endmap
 map medium_level
   m2 
   m4
+  m5
   m6
 endmap
 
 map lower_level
-  m5  [15 0 m] none
+  m5  [15 15 m] none
 endmap
 
 map ramo_aria_plan_map -title "Grotta del Fiume - Ramo dell'Aria - Pianta"
