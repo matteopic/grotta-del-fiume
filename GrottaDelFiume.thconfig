@@ -5,7 +5,6 @@ source index.th
 layout grotta_fiume_layout
   doc-title "Grotta del Fiume"
   scale 1 500
-  layers on
 
   # Disattiva le etichette
   symbol-hide point label

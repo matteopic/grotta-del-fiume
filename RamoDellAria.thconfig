@@ -33,20 +33,20 @@ layout ramo_aria_layout
 endlayout
 
 lookup scrap
-sala_meduse@ramo_aria [0 100 0] "Sala delle meduse"
-sala_meduse_sotto@ramo_aria [100 0 0] "Sala delle medusa - piano inferiore"
-meduse@ramo_aria [100 50 0] "Meduse"
-ramo_alto@ramo_aria [0 50 100] "Ramo alto"
-mery@ramo_aria [100 50 100] "Mery"
-pozzo_sposo@ramo_aria [0 30 0] "Pozzo dello sposo"
-fine@ramo_aria [50 50 0] "Fondo"
-budello_uscita@ramo_aria [50 50 0] "Fondo"
+sala_meduse@ramo-aria [0 100 0] "Sala delle meduse"
+sala_meduse_sotto@ramo-aria [100 0 0] "Sala delle medusa - piano inferiore"
+meduse@ramo-aria [100 50 0] "Meduse"
+ramo_alto@ramo-aria [0 50 100] "Ramo alto"
+mery@ramo-aria [100 50 100] "Mery"
+pozzo_sposo@ramo-aria [0 30 0] "Pozzo dello sposo"
+fine@ramo-aria [50 50 0] "Fondo"
+budello_uscita@ramo-aria [50 50 0] "Fondo"
 endlookup
 
 
 # PDF
-select ramo_aria_plan_map@ramo_aria
-select ramo_aria_section_map@ramo_aria
+select plan@ramo-aria
+select section@ramo-aria
 export map -projection plan      -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - pianta.pdf"
 export map -projection extended  -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - sezione.pdf"
 
