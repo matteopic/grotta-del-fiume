@@ -914,22 +914,16 @@ equate 7.9 FONDO1.0
 # Congiunzione poligonale dal cimitero a "Stretta dei cocoriti"
 equate 1.0 PA1
 
-
-# SURFACE #
-
-input "RamoDellAria_Surface.th"
-
-
 join meduse_line:2 alto_line_left:0
 join meduse_line:1 alto_line_right:end
 
 # MAPS #
 
-input "RamoDellAria_Plan1.th2"
-input "RamoDellAria_Plan2.th2"
-input "RamoDellAria_Plan3.th2"
-input "RamoDellAria_Plan4.th2"
-input "RamoDellAria_Plan5.th2"
+input "plan1.th2"
+input "plan2.th2"
+input "plan3.th2"
+input "plan4.th2"
+input "plan5.th2"
 
 map m1
   ramo_alto
@@ -970,7 +964,7 @@ map lower_level
   m5  [15 15 m] none
 endmap
 
-map ramo_aria_plan_map -title "Grotta del Fiume - Ramo dell'Aria - Pianta"
+map plan -title "Grotta del Fiume - Ramo dell'Aria - Pianta"
   high_level
 
   break
@@ -983,12 +977,12 @@ map ramo_aria_plan_map -title "Grotta del Fiume - Ramo dell'Aria - Pianta"
 endmap
 
 
-input "RamoDellAria_Section1.th2"
-input "RamoDellAria_Section2.th2"
-input "RamoDellAria_Section3.th2"
-input "RamoDellAria_Section4.th2"
-input "RamoDellAria_Section5.th2"
-map ramo_aria_section_map -title "Grotta del Fiume - Ramo dell'Aria - Sezione"
+input "section1.th2"
+input "section2.th2"
+input "section3.th2"
+input "section4.th2"
+input "section5.th2"
+map section -title "Grotta del Fiume - Ramo dell'Aria - Sezione"
   ramo_nuovo_S2
   break
   ramo_nuovo_S1
