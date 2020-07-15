@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -144.0 -144.0 5716.0 1545.322834645669
 ##XTHERION## xth_me_area_zoom_to 25
-##XTHERION## xth_me_image_insert {167.24409448818895 1 1.0} {68.34645669291338 1.0} pocket-topo/da_ingresso_a_pozzo_cristalli_e.xvi 0 {}
+##XTHERION## xth_me_image_insert {167.24409448818895 1 1.0} {68.34645669291338 1.0} {../pocket-topo/ingresso-cristalli/da_ingresso_a_pozzo_cristalli_e.xvi} 0 {}
 
 
 

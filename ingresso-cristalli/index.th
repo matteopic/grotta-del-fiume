@@ -1,5 +1,5 @@
 encoding  utf-8
-survey da_ingresso_a_pozzo_dei_cristalli -title "Ingresso - Pozzo dei cristalli"
+survey ingresso-cristalli -title "Da Ingresso a Pozzo dei cristalli"
 centreline
   team "Matteo Piccinini"
   team "Mirco Molinari"
@@ -308,13 +308,13 @@ centreline
   mark 1.12 fixed
 endcentreline
 
-input "da_ingresso_a_pozzo_dei_cristalli_pianta.th2"
-map ingresso_pianta_map
+input "plan.th2"
+map plan
   ingresso_pianta
 endmap
 
-input "da_ingresso_a_pozzo_dei_cristalli_sezione.th2"
-map ingresso_sezione_map
+input "section.th2"
+map section
   ingresso_sezione
 endmap
 
