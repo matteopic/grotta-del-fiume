@@ -1,7 +1,7 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -132.0 -132.0 2096.0 4885.0
 ##XTHERION## xth_me_area_zoom_to 100
-##XTHERION## xth_me_image_insert {650.7480314960628 1 1.0} {3331.755905511811 1.0} fine_p.xvi 0 {}
+##XTHERION## xth_me_image_insert {650.7480314960628 1 1.0} {3331.755905511811 1.0} {../pocket-topo/ramo-aria/fine_p.xvi} 0 {}
 
 
 
