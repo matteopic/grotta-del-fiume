@@ -1,6 +1,6 @@
 encoding  utf-8
 
-survey fuoco_fossile
+survey fuoco-fossile
 # Questo rilievo è stato fatto in maniera molto rapida e imprecisa
 # non fare affidamento su questi punti
 centreline
@@ -66,7 +66,7 @@ endcentreline
 endsurvey
 
 
-map fuoco_fossile_map -title "Sala delle ossa e Sala del Fuoco Fossile"
+map plan -title "Sala delle ossa e Sala del Fuoco Fossile"
     projection plan
-    fuoco_fossile
+    fuoco-fossile # Survey
 endmap
