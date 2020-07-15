@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 2185.0 4104.377952755905
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {517.3228346456692 1 1.0} {3855.11811023622 1.0} pocket-topo/da_ingresso_a_pozzo_cristalli_p.xvi 0 {}
 
 
@@ -234,6 +234,25 @@ point 712.6328346456692 3677.12811023622 station -name 1.1
 
 point 517.3228346456692 3855.11811023622 station -name 1.0
 
+line border
+  1643.5 494.5
+  1643.5 494.5 1714.25 439.75 1710.5 422.25
+  smooth off
+  1732.0 402.0 1745.0 398.75 1745.0 398.75
+  smooth off
+  1754.5 389.25
+  1776.5 370.0 1836.25 216.75 1836.25 216.75
+  smooth off
+endline
+
+line contour
+  1655.5 385.5
+  1685.0 415.5 1678.0 419.5 1710.5 422.25
+  smooth off
+  1725.0 407.5 1718.25 396.22 1724.5 376.5
+  smooth off
+endline
+
 line wall
   514.0 411.5
   subtype unsurveyed
@@ -241,7 +260,7 @@ line wall
   smooth off
   760.5 399.0 850.5 628.5 834.0 678.0
   smooth off
-  subtype unsurveyed
+  subtype bedrock
   890.0 715.0 833.5 959.0 903.5 898.5
   smooth off
   914.0 906.5 993.1128346456692 875.8281102362203 993.1128346456692 875.8281102362203
@@ -255,10 +274,18 @@ line wall
   smooth off
   1570.0 463.0 1643.5 494.5 1643.5 494.5
   smooth off
-  1643.5 494.5 1723.5 438.0 1720.5 425.0
+  1643.5 494.5 1660.5 481.5 1657.5 468.5
   smooth off
-  1753.5 388.0
-  1770.5 381.5 1864.75 157.25 1864.75 157.25
+  1596.5 408.0
+  subtype unsurveyed
+  1596.5 408.0 1382.0 381.0 1501.5 276.5
+  smooth off
+  1557.0 291.5 1570.25 315.25 1570.25 315.25
+  smooth off
+  subtype unsurveyed
+  1664.75 229.25 1701.0 142.5 1715.5 118.0
+  smooth off
+  1704.0 87.0 1637.5 77.0 1772.5 14.5
   smooth off
 endline
 
@@ -398,16 +425,16 @@ line section -direction both
 endline
 
 line pit -id pozzo_dei_cristalli -close on
-  1861.0 290.5
-  1824.25 287.0 1832.25 252.25 1841.5 214.5
+  1860.0 288.75
+  1829.75 283.25 1827.0 254.5 1836.25 216.75
   smooth off
-  1855.0 176.85 1913.0 145.5 1913.0 145.5
+  1844.0 182.25 1860.25 124.5 1913.75 144.25
   smooth off
-  1913.0 145.5 1924.75 139.75 1935.5 148.0
+  1924.81 136.42 1924.75 139.75 1935.5 148.0
   smooth off
   1935.5 148.0 1949.75 169.75 1950.0 206.5
   smooth off
-  1925.0 242.5 1896.0 291.0 1861.0 290.5
+  1925.0 242.5 1895.0 289.25 1860.0 288.75
   smooth off
 endline
 
@@ -443,13 +470,9 @@ line wall -close on -reverse on
   smooth off
 endline
 
-point 1782.0 58.5 traverse
+point 1723.5 54.5 traverse
 
-point 1736.5 140.0 traverse
-
-point 1698.0 193.0 traverse
-
-point 1650.5 257.0 traverse
+point 1670.0 228.0 traverse
 
 point 1612.5 298.5 rope
 
@@ -474,17 +497,14 @@ line wall -reverse on
   smooth off
   1828.75 412.25 1866.0 335.0 1866.0 335.0
   smooth off
-  1854.25 331.5 1861.0 290.5 1861.0 290.5
+  1854.25 331.5 1860.0 288.75 1860.0 288.75
   smooth off
-  1898.75 302.5 1950.0 206.5 1950.0 206.5
+  1897.75 300.75 1950.0 206.5 1950.0 206.5
   smooth off
   1952.5 167.25 1945.5 91.0 1923.5 79.0
   smooth off
-  subtype unsurveyed
-  1902.5 60.75 1790.5 19.5 1790.5 19.5
+  1885.0 38.0 1805.5 19.0 1791.0 20.5
   smooth off
-  1779.6828346456691 24.178110236220164
-  1571.5 315.0
 endline
 
 line wall -subtype bedrock
