@@ -17,3 +17,21 @@ input "ramo-aria/index.th"
 
 # SURFACE #
 input "surface.th"
+
+map plan
+plan@ingresso-cristalli
+plan@rinoceronte-tarlo
+plan@ramo-aria
+endmap
+
+map section
+section@ingresso-cristalli
+section@rinoceronte-tarlo
+section@ramo-aria
+endmap
+
+centreline
+  extend right 1.0@rinoceronte-tarlo 1.1@rinoceronte-tarlo
+  extend left 1.1@rinoceronte-tarlo 1.5@rinoceronte-tarlo
+  extend left 1.33@rinoceronte-tarlo
+endcentreline

@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 2185.0 4104.377952755905
-##XTHERION## xth_me_area_zoom_to 50
-##XTHERION## xth_me_image_insert {517.3228346456692 1 1.0} {3855.11811023622 1.0} {../pocket-topo/ingresso-cristalli/da_ingresso_a_pozzo_cristalli_p.xvi} 0 {}
+##XTHERION## xth_me_area_adjust -132.0 -132.0 2187.0 4104.377952755905
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {517.3228346456692 1 1.0} {3855.11811023622 1.0} ../pocket-topo/ingresso-cristalli/da_ingresso_a_pozzo_cristalli_p.xvi 0 {}
 
 
 
@@ -587,9 +587,7 @@ endline
 area water
 endarea
 
-point 188.0 2631.0 gate
-
-point 172.0 2661.5 label -text Cancello
+point 196.5 2677.5 gate
 
 line wall
   123.0 2813.0
@@ -646,7 +644,7 @@ line contour
   smooth off
 endline
 
-point 468.75 3971.5 gate
+point 475.75 3948.5 gate -clip off
 
 line slope -reverse on
   745.0 2993.0
