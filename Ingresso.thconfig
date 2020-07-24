@@ -1,0 +1,49 @@
+encoding  utf-8
+source index.th
+
+## MAPS ##
+
+layout print_centerline
+code metapost
+
+  def l_survey_cave (expr P) =
+    T:=identity;
+    pair zz[];
+    pickup PenC;
+    for t = 0 upto length P - 1:
+      zz1 := point t of P;
+      zz2 := point t+1 of P;
+      draw zz1 -- zz2 withcolor (0.1,0.1,0.1);
+    endfor;
+  enddef;
+endlayout
+
+layout ingresso_layout
+  doc-title "Grotta del Fiume - Ingresso - Pozzo dei Cristalli"
+  scale 1 100
+  layers on
+  
+  transparency on
+  opacity 60
+
+  statistics topo-length on
+  statistics explo-length on
+  #debug all
+endlayout
+
+
+# PDF
+select plan@ingresso-cristalli
+select section@ingresso-cristalli
+export map -projection plan      -layout ingresso_layout -layout print_centerline -output "out/Grotta del Fiume - Ingresso - pianta.pdf"
+export map -projection extended  -layout ingresso_layout -layout print_centerline -output "out/Grotta del Fiume - Ingresso - sezione.pdf"
+
+# Google Earth
+#export map -projection plan      -output "out/Grotta del Fiume - Ingresso - pianta.kml"
+#export model                     -output "out/Grotta del Fiume - Ingresso - poligonale.kml"
+
+# Loch
+#export model                     -output "out/Grotta del Fiume - Ingresso.lox"
+
+# Aven Survex -  https://survex.com/
+#export model                     -output "out/Grotta del Fiume - Ingresso.3d"

@@ -1,0 +1,143 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -136.0 -136.0 1502.0 1096.0
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {520.6692913385825 1 1.0} {408.4645669291338 6.23} {da pozzo sposo_e.xvi} 0 {}
+
+
+
+scrap sposo_S1 -projection extended -scale [0 0 2794.0 -4.0 0.0 0.0 40.64 0.0 m]
+
+line section -reverse on -direction both
+  626.0 348.0
+  627.64 387.97 644.36 796.03 646.0 836.0
+  smooth off
+endline
+
+point 55.0 6.0 section -scrap sposo_section -align top-right
+
+line wall -close on
+  1007.0 513.0
+  1005.0 487.0 990.0 381.0 990.0 381.0
+  smooth off
+  960.0 283.0 893.0 419.0 869.0 433.0
+  smooth off
+  864.0 476.0
+  792.0 497.0 837.0 544.0 837.0 544.0
+  smooth off
+  993.0 623.0 1007.0 513.0 1007.0 513.0
+  smooth off
+endline
+
+line wall
+  242.0 785.0
+  333.0 766.0 314.0 648.0 314.0 648.0
+  smooth off
+  352.0 605.0 331.05 544.44 353.0 511.0
+  smooth off
+  440.0 456.0
+  440.0 456.0 494.0 413.0 488.0 368.0
+  smooth off
+endline
+
+line wall
+  254.0 907.0
+  309.0 910.0
+  348.0 871.0
+  420.0 847.0
+  420.0 847.0 428.0 824.0 494.0 821.0
+  smooth off
+  526.0 800.0 592.0 791.0 592.0 791.0
+  smooth off
+  660.0 803.0
+  660.0 803.0 742.48 843.82 782.0 850.0
+  821.52 856.18 884.45 857.79 922.0 844.0
+  smooth off
+  1053.0 846.0 1087.0 738.0 1087.0 738.0
+  smooth off
+  1115.0 705.0 1335.56 650.08 1365.0 623.0
+  smooth off
+  1352.0 600.0 1311.0 532.0 1311.0 532.0
+  smooth off
+  1335.0 490.0 1303.0 458.0 1303.0 458.0
+  smooth off
+  1159.0 287.0 1158.0 348.0 1088.0 316.0
+  smooth off
+  977.0 283.0
+  954.0 310.0 867.0 289.0 856.0 332.0
+  smooth off
+  845.0 375.0 724.0 379.0 724.0 379.0
+  smooth off
+  577.0 408.0 556.0 370.0 556.0 370.0
+  smooth off
+endline
+
+point 1168.3492913385826 416.2645669291338 station -name 7.6
+
+point 1085.1992913385825 369.8445669291338 station -name 7.5
+
+point 1016.2192913385825 308.0345669291338 station -name 7.4
+
+point 930.7092913385825 317.6745669291338 station -name 7.3
+
+point 786.9692913385825 430.8645669291338 station -name 7.2
+
+point 627.4792913385825 440.9445669291338 station -name 7.1
+
+point 520.6692913385825 408.4645669291338 station -name 7.0
+
+endscrap
+
+
+
+scrap sposo_S2 -projection extended -scale [0 0 2794.0 -4.0 0.0 0.0 40.64 0.0 m]
+
+point 1005.4292913385825 772.5245669291338 station -name 7.8
+
+point 1075.7492913385827 809.8045669291338 station -name 7.9
+
+line wall -subtype underlying
+  910.0 589.0
+  954.0 600.0 1016.0 632.0 1016.0 632.0
+  smooth off
+  1177.0 843.0 1139.0 902.0 1222.0 959.0
+  smooth off
+endline
+
+line wall -reverse on -subtype underlying
+  861.0 754.0
+  934.0 928.0 1093.0 881.0 1093.0 881.0
+  smooth off
+  1166.0 959.0
+endline
+
+endscrap
+
+
+
+scrap sposo_section -projection none -scale [0 0 2794.0 -4.0 0.0 0.0 40.64 0.0 m]
+
+line wall -close on -reverse on
+  123.0 175.0
+  133.0 238.0 9.0 449.0 31.0 523.0
+  smooth off
+  44.0 538.0 111.0 474.0 133.0 475.0
+  smooth off
+  164.0 468.0 211.0 503.0 226.0 503.0
+  smooth off
+  251.0 501.0 307.0 389.0 351.0 336.0
+  smooth off
+  372.0 207.0 320.0 127.0 320.0 127.0
+  smooth off
+  310.0 85.0 258.0 34.0 258.0 34.0
+  smooth off
+  175.0 -2.0 152.0 47.0 152.0 47.0
+  smooth off
+  107.0 79.0 123.0 175.0 123.0 175.0
+  smooth off
+endline
+
+point 152.5592913385825 105.31456692913383 station -name 7.1
+
+endscrap
+
+

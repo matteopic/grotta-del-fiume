@@ -1,0 +1,65 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -132.0 -132.0 4025.63779527559 7647.685039370078
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {3458.1876377952754 1 1.0} {2234.6857480314957 1.1} ../pocket-topo/rinoceronte-tarlo/unione_p.xvi 0 {}
+
+
+
+scrap pozzo_cristalli_alto_pianta -projection plan -scale [-128.0 -128.0 3946.897637795275 -128.0 0.0 0.0 103.50239999999998 0.0 m]
+
+point 123.0 7415.5 traverse
+
+point 148.5 7355.0 traverse
+
+line wall -reverse on
+  123.0 7415.5
+  subtype pit
+  123.0 7415.5 161.0 7429.5 170.0 7390.0
+  smooth off
+  subtype bedrock
+  201.5 7344.5
+  201.5 7344.5 237.5 7321.5 239.0 7294.5
+  smooth off
+  271.0 7280.5
+  296.5 7276.0
+  337.0 7231.0
+  345.0 7183.0 407.0 7229.0 455.5 7192.0
+  smooth off
+endline
+
+line wall
+  20.5 7391.0
+  20.5 7391.0 33.5 7356.0 64.0 7327.5
+  smooth off
+  94.5 7298.0 115.5 7269.5 115.5 7269.5
+  smooth off
+  115.5 7269.5 122.0 7251.5 137.5 7243.0
+  smooth off
+  191.5 7214.5
+  214.0 7205.0 214.5 7194.0 214.5 7194.0
+  smooth off
+  214.5 7194.0 227.5 7189.5 244.5 7190.5
+  smooth off
+  269.0 7170.0 280.5 7155.5 280.5 7155.5
+  smooth off
+  280.5 7155.5 294.5 7142.75 333.75 7144.75
+  smooth off
+  333.75 7144.75 423.0 7129.75 462.0 7131.0
+  smooth off
+endline
+
+point 264.0176377952753 7217.045748031495 station -name 1.35
+
+line pit -reverse on
+  170.0 7390.0
+  170.0 7390.0 173.5 7368.5 167.25 7362.5
+  smooth off
+  149.0 7330.0 113.25 7373.75 113.25 7373.75
+  smooth off
+endline
+
+point 108.81763779527546 7371.215748031495 station -name 1.36
+
+endscrap
+
+

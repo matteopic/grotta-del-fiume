@@ -1,37 +1,61 @@
 encoding  utf-8
-source "RamoDellAria.th" 
-
-# init plan file
-# export map -projection plan -output RamoDellariaPlan.th2
-
+source index.th
 
 ## MAPS ##
 
-layout L100
-  doc-title "Ramo dell'Aria"
+layout print_centerline
+code metapost
+
+  def l_survey_cave (expr P) =
+    T:=identity;
+    pair zz[];
+    pickup PenC;
+    for t = 0 upto length P - 1:
+      zz1 := point t of P;
+      zz2 := point t+1 of P;
+      draw zz1 -- zz2 withcolor (0.1,0.1,0.1);
+    endfor;
+  enddef;
+endlayout
+
+layout ramo_aria_layout
+  doc-title "Grotta del Fiume - Ramo dell'Aria"
   scale 1 100
   layers on
   
-  # enable for debug
-  #color map-fg [100 0 0]
-  #color map-bg [0 0 100]
+  transparency on
+  opacity 60
+
+  statistics topo-length on
+  statistics explo-length on
+  colour-legend on
+  colour map-fg scrap
 endlayout
 
-# choose which maps to export. default: all maps
-#select map_plan
+lookup scrap
+sala_meduse@ramo-aria [0 100 0] "Sala delle meduse"
+sala_meduse_sotto@ramo-aria [100 0 0] "Sala delle medusa - piano inferiore"
+meduse@ramo-aria [100 50 0] "Meduse"
+ramo_alto@ramo-aria [0 50 100] "Ramo alto"
+mery@ramo-aria [100 50 100] "Mery"
+pozzo_sposo@ramo-aria [0 30 0] "Pozzo dello sposo"
+fine@ramo-aria [50 50 0] "Fondo"
+budello_uscita@ramo-aria [50 50 0] "Fondo"
+endlookup
 
-export map -projection plan      -layout L100 -output "out/RamoDellAria_plant.pdf"
-export map -projection elevation -layout L100 -output "out/RamoDellAria_section.pdf"
 
+# PDF
+select plan@ramo-aria
+select section@ramo-aria
+export map -projection plan      -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - pianta.pdf"
+export map -projection extended  -layout ramo_aria_layout -output "out/Grotta del Fiume - Ramo dell'Aria - sezione.pdf"
 
+# Google Earth
+#export map -projection plan      -output "out/Grotta del Fiume - Ramo dell'Aria - pianta.kml"
+#export model                     -output "out/Grotta del Fiume - Ramo dell'Aria - poligonale.kml"
 
-## 3D Models ##
+# Loch
+#export model                     -output "out/Grotta del Fiume - Ramo dell'Aria.lox"
 
-
-### Loch ###
-
-export model -output "out/RamoDellAria.lox"
-
-### Aven Survex -  https://survex.com/ ###
-
-export model -output "out/RamoDellAria.3d"
+# Aven Survex -  https://survex.com/
+#export model                     -output "out/Grotta del Fiume - Ramo dell'Aria.3d"
