@@ -10,8 +10,7 @@ input "fuoco-fossile/index.th"
 equate 56@fuoco-fossile 1.18@ingresso-cristalli
 
 input "rinoceronte-tarlo/index.th"
-equate 1.32@rinoceronte-tarlo PA70@ramo-aria
-
+equate 1.36@rinoceronte-tarlo 1.18@ingresso-cristalli
 
 input "ramo-aria/index.th"
 
