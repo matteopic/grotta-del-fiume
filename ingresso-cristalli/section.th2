@@ -1,7 +1,7 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -144.0 -144.0 5716.0 1545.322834645669
-##XTHERION## xth_me_area_zoom_to 25
-##XTHERION## xth_me_image_insert {167.24409448818895 1 1.0} {68.34645669291338 1.0} {../pocket-topo/ingresso-cristalli/da_ingresso_a_pozzo_cristalli_e.xvi} 0 {}
+##XTHERION## xth_me_area_adjust -132.0 -132.0 5702.0 1545.322834645669
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {167.24409448818895 1 1.0} {68.34645669291338 1.0} ../pocket-topo/ingresso-cristalli/da_ingresso_a_pozzo_cristalli_e.xvi 0 {}
 
 
 
@@ -129,7 +129,7 @@ point 5106.5 959.5 rope
 
 point 151.75 59.25 entrance
 
-line wall -reverse on
+line wall -id cristalli_roof_outer -reverse on
   22.0 38.25
   22.0 38.25 84.25 74.75 94.5 84.0
   smooth off
@@ -238,11 +238,9 @@ line wall -reverse on
   smooth off
 endline
 
-point 5569.0 1024.0 continuation -align center
-
-line wall -reverse on
-  5545.0 1001.0
-  5459.0 913.0 5558.0 499.0 5432.0 478.0
+line wall -id cristalli_floor_outer -reverse on
+  5508.0 899.0
+  5451.0 735.0 5558.0 498.0 5432.0 477.0
   smooth off
   5287.75 481.0
   subtype pit

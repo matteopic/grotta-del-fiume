@@ -17,6 +17,10 @@ input "ramo-aria/index.th"
 # SURFACE #
 input "surface.th"
 
+# Surveys scraps JOIN
+join cristalli_roof_outer@ingresso-cristalli:end cristalli_roof_middle@rinoceronte-tarlo:0 
+join cristalli_floor_outer@ingresso-cristalli:0 cristalli_floor_middle@rinoceronte-tarlo:end 
+
 map plan
 plan@ingresso-cristalli
 plan@rinoceronte-tarlo
@@ -29,8 +33,3 @@ section@rinoceronte-tarlo
 section@ramo-aria
 endmap
 
-centreline
-  extend right 1.0@rinoceronte-tarlo 1.1@rinoceronte-tarlo
-  extend left 1.1@rinoceronte-tarlo 1.5@rinoceronte-tarlo
-  extend left 1.33@rinoceronte-tarlo
-endcentreline

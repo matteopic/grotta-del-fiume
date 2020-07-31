@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -132.0 3946.897637795275 7310.0
-##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_area_adjust -144.0 -144.0 3946.897637795275 7320.0
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {3351.377952755905 1 1.0} {2424.0157480314956 1.0} ../pocket-topo/rinoceronte-tarlo/rinoceronte-tarlo_p.xvi 0 {}
 
 
@@ -721,7 +721,13 @@ scrap sala_senzanome_pianta -projection plan -scale [-128.0 -128.0 3946.89763779
 line wall
 endline
 
-line wall
+line wall -close off
+  2968.0 1449.0
+endline
+
+point 3404.0 2820.0 water
+
+line wall -reverse on
   2825.0 1465.0
   2825.0 1465.0 2909.0 1817.0 2944.0 1860.0
   smooth off
@@ -737,10 +743,13 @@ line wall
   smooth off
   3054.0 2621.0
   3121.0 2638.0
-  subtype bedrock
-  3175.0 2644.0 3352.6 2827.62 3404.0 2810.0
+  3175.0 2644.0 3281.0 2797.0 3363.0 2788.0
   smooth off
-  3401.0 2763.0 3227.0 2601.0 3227.0 2601.0
+  3363.0 2788.0 3398.0 2848.0 3419.0 2834.0
+  smooth off
+  3431.0 2819.0 3390.0 2775.0 3390.0 2775.0
+  smooth off
+  3343.0 2750.0 3429.0 2592.0 3227.0 2601.0
   smooth off
   3258.0 2526.0 3377.0 2491.0 3414.0 2470.0
   smooth off
