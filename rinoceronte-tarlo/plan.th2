@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -144.0 -144.0 3946.897637795275 7320.0
-##XTHERION## xth_me_area_zoom_to 25
+##XTHERION## xth_me_area_adjust -132.0 -132.0 3946.897637795275 7310.0
+##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {3351.377952755905 1 1.0} {2424.0157480314956 1.0} ../pocket-topo/rinoceronte-tarlo/rinoceronte-tarlo_p.xvi 0 {}
 
 
@@ -290,7 +290,7 @@ endscrap
 
 scrap sala_rosa_pianta -projection plan -scale [-128.0 -128.0 3946.897637795275 -128.0 0.0 0.0 103.50239999999998 0.0 m]
 
-line rock-border -close on -clip off
+line rock-border -close on -clip off -visibility off
   975.0 2739.0
   1008.0 2752.0 1059.43 2720.97 1040.0 2686.0
   1020.57 2651.03 957.0 2583.0 930.0 2658.0
@@ -301,6 +301,10 @@ endline
 point 1221.7279527559049 3163.0757480314956 station -name 1.15
 
 point 983.897952755905 2880.275748031496 station -name 1.16
+
+point 2718.0 261.0 continuation
+
+point 246.0 3075.0 continuation
 
 point 250.0 3042.0 label -text [Verso sala delle ossa]
 
@@ -347,14 +351,12 @@ line border -id l95-794-3032 -reverse on -visibility off
   smooth off
   1250.0 3204.0 1252.0 2715.0 1168.0 2722.0
   smooth off
-  1041.0 2553.0 819.0 2643.0 738.0 2647.0
+  877.0 2675.0 819.0 2643.0 738.0 2647.0
   smooth off
 endline
 
 line wall -id l30-382-2956 -reverse on
-  744.0 2453.0
-  685.0 2475.0 775.71 2638.62 738.0 2647.0
-  smooth off
+  738.0 2647.0
   683.0 2623.0 404.94 2522.07 348.0 2541.0
   310.04 2553.62 327.49 2741.4 338.0 2780.0
   348.51 2818.59 414.0 3062.0 393.0 3133.0
@@ -617,6 +619,12 @@ line wall -reverse on
   smooth off
 endline
 
+point 937.0 6450.0 continuation
+
+point 1318.0 6438.0 continuation
+
+point 1245.0 6837.0 continuation
+
 line wall
   1212.5 6808.0
   1199.0 6859.5 1124.25 6956.75 1124.25 6956.75
@@ -721,16 +729,10 @@ scrap sala_senzanome_pianta -projection plan -scale [-128.0 -128.0 3946.89763779
 line wall
 endline
 
-line wall -close off
-  2968.0 1449.0
-endline
-
 point 3404.0 2820.0 water
 
-line wall -reverse on
-  2825.0 1465.0
-  2825.0 1465.0 2909.0 1817.0 2944.0 1860.0
-  smooth off
+line wall -close off -reverse on
+  2944.0 1860.0
   2841.0 1890.0 2914.0 2060.0 2914.0 2060.0
   smooth off
   2846.0 2051.0 2839.0 2177.0 2839.0 2177.0
@@ -763,7 +765,7 @@ line wall -reverse on
   3290.0 1919.5
   3249.5 1904.0 3207.0 1845.0 3207.0 1845.0
   smooth off
-  3201.5 1734.5 2951.0 1486.0 2951.0 1486.0
+  3146.0 1814.0 2905.0 1743.0 2944.0 1860.0
   smooth off
 endline
 
@@ -776,8 +778,6 @@ point 3296.967952755905 2101.8857480314955 station -name 1.5
 point 3390.667952755905 2234.6857480314957 station -name 1.1
 
 point 3272.397952755905 2213.0357480314956 station -name 1.2
-
-point 3019.0 1488.0 continuation
 
 point 1306.0 2576.0 blocks
 
@@ -806,8 +806,6 @@ line contour -reverse on
   2946.98 2336.42 2879.0 2383.0 2879.0 2383.0
   smooth off
 endline
-
-point 2968.0 1449.0 continuation
 
 point 3364.0 2048.0 stalagmite
 

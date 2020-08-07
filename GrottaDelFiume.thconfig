@@ -35,3 +35,7 @@ export model                     -output "out/Grotta del Fiume.lox"
 
 # Aven Survex -  https://survex.com/
 export model                     -output "out/Grotta del Fiume.3d"
+
+export continuation-list          -output "out/grotta-del-fiume-continuations.html"
+
+export database                   -output "out/grotta-del-fiume.sql"
