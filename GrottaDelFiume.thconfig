@@ -36,6 +36,13 @@ export model                     -output "out/Grotta del Fiume.lox"
 # Aven Survex -  https://survex.com/
 export model                     -output "out/Grotta del Fiume.3d"
 
-export continuation-list          -output "out/grotta-del-fiume-continuations.html"
+# HTML
+export continuation-list          -output "out/Grotta del Fiume - continuations.html"
 
-export database                   -output "out/grotta-del-fiume.sql"
+# SQL
+export database                   -output "out/Grotta del Fiume.sql"
+
+# ESRI
+export model \
+  -output "out/Grotta del Fiume - ESRI"  \
+  -format esri  # format statement explicitly required else pdf is produced regardless of extension
