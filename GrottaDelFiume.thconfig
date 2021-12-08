@@ -1,10 +1,13 @@
 encoding  utf-8
 source index.th
+input common.layout
 
 ## MAPS ##
 layout grotta_fiume_layout
   doc-title "Grotta del Fiume"
   scale 1 500
+
+  colour map-bg [80 80 80]
 
   # Disattiva le etichette
   symbol-hide point label

@@ -1,0 +1,24 @@
+encoding  utf-8
+
+layout debug
+    debug all
+    debug first
+    debug second
+    debug station-names
+    colour map-bg 85
+endlayout
+
+layout print_centerline
+code metapost
+
+  def l_survey_cave (expr P) =
+    T:=identity;
+    pair zz[];
+    pickup PenC;
+    for t = 0 upto length P - 1:
+      zz1 := point t of P;
+      zz2 := point t+1 of P;
+      draw zz1 -- zz2 withcolor (0.1,0.1,0.1);
+    endfor;
+  enddef;
+endlayout

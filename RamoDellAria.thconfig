@@ -1,22 +1,7 @@
 encoding  utf-8
 source index.th
+input common.layout
 
-## MAPS ##
-
-layout print_centerline
-code metapost
-
-  def l_survey_cave (expr P) =
-    T:=identity;
-    pair zz[];
-    pickup PenC;
-    for t = 0 upto length P - 1:
-      zz1 := point t of P;
-      zz2 := point t+1 of P;
-      draw zz1 -- zz2 withcolor (0.1,0.1,0.1);
-    endfor;
-  enddef;
-endlayout
 
 layout ramo_aria_layout
   doc-title "Grotta del Fiume - Ramo dell'Aria"

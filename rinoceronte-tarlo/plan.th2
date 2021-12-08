@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -132.0 -132.0 3946.897637795275 7310.0
-##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_area_zoom_to 200
 ##XTHERION## xth_me_image_insert {3351.377952755905 1 1.0} {2424.0157480314956 1.0} ../pocket-topo/rinoceronte-tarlo/rinoceronte-tarlo_p.xvi 0 {}
 
 
@@ -198,10 +198,7 @@ line wall
   1751.73 2433.4 1650.38 2417.96 1617.0 2440.0
   1583.61 2462.04 1571.48 2521.86 1547.0 2553.5
   1522.52 2585.14 1459.31 2623.28 1446.0 2661.0
-  1432.69 2698.72 1398.5 2974.5 1398.5 2974.5
-  smooth off
-  1227.0 3203.0
-  1227.0 3203.0 1374.49 3006.49 1398.5 2974.5
+  1432.69 2698.72 1388.0 2972.25 1388.0 2972.25
   smooth off
 endline
 
@@ -289,6 +286,11 @@ endscrap
 
 
 scrap sala_rosa_pianta -projection plan -scale [-128.0 -128.0 3946.897637795275 -128.0 0.0 0.0 103.50239999999998 0.0 m]
+
+line wall
+  1388.0 2972.25
+  1227.0 3203.0
+endline
 
 line rock-border -close on -clip off -visibility off
   975.0 2739.0
@@ -623,7 +625,7 @@ point 937.0 6450.0 continuation
 
 point 1318.0 6438.0 continuation
 
-point 1245.0 6837.0 continuation
+point 1245.0 6837.0 continuation -text "Direzione ramo della selce"
 
 line wall
   1212.5 6808.0

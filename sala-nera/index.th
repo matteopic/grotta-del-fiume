@@ -165,6 +165,7 @@ centreline
   3.8 - 351.38 -78.03 1.351
   3.8 - 15.97 -3.16 2.162
   3.8 - 0.83 -7.67 5.152
+  #extend ignore 3.8 3.9
   3.8 3.9 176.57 -17.08 11.026
   3.9 3.10 320.48 24.26 2.256
   3.10 - 4.34 14.55 5.080
@@ -215,13 +216,14 @@ endcentreline
 input plan.th2
 map plan
 sala-rosa-alta
+condotta-sale-rosa-nera
 sala-nera
 endmap
 
 input elevation.th2
 map section
 sala-rosa-alta-section
-budello-sala-nera-section
+condotta-sala-nera-section
 sala-nera-section
 endmap
 

@@ -15,12 +15,6 @@ line wall -reverse on
   smooth off
 endline
 
-area water
-endarea
-
-line wall
-endline
-
 line wall
   275.5 324.0
   309.0 285.0 358.0 270.0 358.0 270.0
@@ -36,19 +30,15 @@ endline
 
 point 915.4750393700787 349.96448818897636 station -name 3.1
 
+point 19.685039370078737 294.09448818897636 station -name 1.16
+
 point 311.92503937007876 345.55448818897634 station -name 3.0
 
 endscrap
 
 
 
-scrap budello-sala-nera-section -projection extended -scale [-128.0 -128.0 3946.897637795275 -128.0 0.0 0.0 103.50239999999998 0.0 m]
-
-line wall
-endline
-
-line wall
-endline
+scrap condotta-sala-nera-section -projection extended -scale [-128.0 -128.0 3946.897637795275 -128.0 0.0 0.0 103.50239999999998 0.0 m]
 
 point 2084.215039370079 265.5144881889764 station -name 3.7
 
@@ -189,9 +179,6 @@ line wall -reverse on
   smooth off
   2512.5 440.0 2537.0 335.5 2537.0 335.5
   smooth off
-endline
-
-line wall
 endline
 
 endscrap
