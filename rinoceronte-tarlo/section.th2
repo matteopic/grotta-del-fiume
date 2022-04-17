@@ -1,6 +1,6 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 10403.590551181102 3120.125984251968
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_adjust -144.0 -144.0 10403.590551181102 3120.125984251968
+##XTHERION## xth_me_area_zoom_to 25
 ##XTHERION## xth_me_image_insert {39.17322834645668 1 1.0} {661.4173228346456 1.0} ../pocket-topo/rinoceronte-tarlo/rinoceronte-tarlo_e.xvi 0 {}
 
 
@@ -15,10 +15,6 @@ line floor-meander -close on -reverse on
   smooth off
 endline
 
-point 34.0 983.0 continuation -align left
-
-point 31.0 883.0 continuation -align left
-
 point 263.0 996.0 stalagmite
 
 point 679.0 1366.0 continuation -align top
@@ -28,17 +24,6 @@ line wall -subtype presumed
   618.0 1238.0 670.22 1304.76 678.0 1344.0
   smooth off
   628.0 1413.0 595.0 1264.0 595.0 1264.0
-  smooth off
-endline
-
-point 606.5 59.5 continuation -align bottom
-
-line wall -reverse on -subtype unsurveyed
-  725.0 350.0
-  725.0 350.0 640.36 59.99 614.5 67.5
-  smooth off
-  subtype unsurveyed
-  560.0 157.0 702.5 327.0 623.5 378.0
   smooth off
 endline
 
@@ -76,7 +61,12 @@ line wall -reverse on
   874.5 607.0 781.0 477.0 781.0 477.0
   smooth off
   725.0 350.0
-  673.0 337.0 697.5 360.0 623.5 378.0
+  694.0 269.0
+  707.0 123.0 728.0 79.0 621.0 75.0
+  smooth off
+  421.0 74.0 643.0 276.0 643.0 276.0
+  smooth off
+  643.0 276.0 668.0 354.0 623.5 378.0
   smooth off
   subtype bedrock
   636.0 410.0 534.5 446.0 534.5 446.0
@@ -87,11 +77,12 @@ line wall -reverse on
   smooth off
 endline
 
-line wall -reverse on
-  52.0 911.0
-  91.0 904.0
-  84.0 964.0
-  48.0 961.0
+line wall -close on -reverse on
+  60.0 909.0
+  86.0 908.0 89.0 955.0 73.0 956.0
+  smooth off
+  54.0 973.0 46.0 913.0 60.0 909.0
+  smooth off
 endline
 
 line wall -reverse on
@@ -101,7 +92,10 @@ line wall -reverse on
   smooth off
   77.5 765.5 66.5 819.5 81.0 850.0
   smooth off
-  46.0 855.0
+  81.0 850.0 21.0 865.0 17.0 933.0
+  smooth off
+  32.0 989.0 42.0 1005.0 42.0 1005.0
+  smooth off
 endline
 
 point 39.17322834645668 661.4173228346456 station -name 1.0
@@ -262,7 +256,7 @@ line chimney -reverse on -clip off
   smooth off
 endline
 
-line wall
+line wall -id cristalli_roof_inner
   10182.0 894.0
   10182.0 894.0 10121.75 907.5 10090.5 904.5
   smooth off
@@ -451,7 +445,7 @@ line rock-border
   2927.0 571.0
 endline
 
-line wall -reverse on
+line wall -id cristalli_floor_inner -reverse on
   10194.0 722.0
   10139.5 714.5 10071.5 756.0 10032.5 759.0
   smooth off
@@ -561,25 +555,21 @@ line wall -reverse on
   subtype bedrock
   1814.0 751.0 1518.23 742.83 1479.0 735.0
   smooth off
-  1479.0 735.0 1462.0 595.0 1303.0 649.0
+  1479.0 735.0 1443.0 700.0 1314.0 720.0
   smooth off
-  1131.0 556.0 1036.0 627.0 932.0 607.0
+  1142.0 627.0 1042.0 712.0 938.0 692.0
   smooth off
-  932.0 607.0 943.0 702.0 938.5 739.0
+  938.0 692.0 943.0 702.0 938.5 739.0
   smooth off
 endline
 
 line rock-border
-  1280.0 641.0
-  1271.0 659.0
-  1248.0 699.0
+  1256.0 695.0
   1264.0 717.0
   1294.0 739.0
   1318.0 758.0
   1364.0 738.0
-  1365.0 698.0
-  1348.0 653.0
-  1343.0 637.0
+  1368.0 713.0
 endline
 
 line rock-border

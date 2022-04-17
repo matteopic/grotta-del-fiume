@@ -14,23 +14,29 @@ equate 1.36@rinoceronte-tarlo 1.18@ingresso-cristalli
 
 input "ramo-aria/index.th"
 
+input "sala-nera/index.th"
+equate 1.16@sala-nera 1.16@rinoceronte-tarlo
+
 # SURFACE #
 input "surface.th"
+
+# Surveys scraps JOIN
+join cristalli_roof_outer@ingresso-cristalli:end cristalli_roof_middle@rinoceronte-tarlo:0 
+join cristalli_floor_outer@ingresso-cristalli:0 cristalli_floor_middle@rinoceronte-tarlo:end 
+join sala_rosa_pianta@rinoceronte-tarlo  sala-rosa-alta@sala-nera
+join tarlo_pianta@rinoceronte-tarlo  pozzo_cristalli_alto_pianta@rinoceronte-tarlo
 
 map plan
 plan@ingresso-cristalli
 plan@rinoceronte-tarlo
 plan@ramo-aria
+plan@sala-nera
 endmap
 
 map section
 section@ingresso-cristalli
 section@rinoceronte-tarlo
 section@ramo-aria
+section@sala-nera
 endmap
 
-centreline
-  extend right 1.0@rinoceronte-tarlo 1.1@rinoceronte-tarlo
-  extend left 1.1@rinoceronte-tarlo 1.5@rinoceronte-tarlo
-  extend left 1.33@rinoceronte-tarlo
-endcentreline

@@ -763,7 +763,6 @@ centreline
   team "Mirco Molinari"
   date 2020.07.14
   data normal from to compass clino tape
-  extend left
   1.34 1.35 284.45 24.34 7.438
   1.34 - 44.07 -80.86 0.823
   1.34 - 295.74 -1.24 1.988
@@ -816,10 +815,21 @@ endcentreline
 
 
 
-
+centreline
+  extend right 1.0 1.1 
+  #extend left 1.1 1.5 
+  extend right 1.36
+  extend right 1.34
+endcentreline
 
 input plan.th2
 input cristalli-connection-plan.th2
+
+input cristalli-connection-section.th2
+input section.th2
+join cristalli_roof_middle:0 cristalli_roof_inner:end
+join cristalli_floor_middle:end cristalli_floor_inner:end
+
 
 map plan
 sala_senzanome_pianta
@@ -834,14 +844,11 @@ tarlo_pianta
 pozzo_cristalli_alto_pianta
 endmap
 
-
-
-input section.th2
 map section
 
 ingresso_sala_senzanome_sezione
 main_sezione
-
+cristalli_connection_section
 break
 
 sala_senzanome_sezione
