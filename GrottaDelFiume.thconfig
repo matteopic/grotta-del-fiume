@@ -2,6 +2,77 @@ encoding  utf-8
 source index.th
 input common.layout
 
+layout altitude
+
+  scale-bar 150 m 
+  #  layout for map
+  copy map
+  overlap 0 cm
+  
+  code metapost
+    
+    def s_scalebar (expr l, units, txt) = 
+      begingroup
+        tmpw = 3.0 bp;
+        tmp5m = 5 / Scale * units * cm;
+        tmpl = l / Scale * units * cm;
+      endgroup;
+      p := (0, 0) -- (tmpw, 0) -- (tmpw, - tmp5m) -- (0, - tmp5m) -- cycle; 
+      pickup PenD;
+      for i := 0 step 1 until (l - 1) / 5:
+        if (i mod 2) <> 0:
+          unfill p shifted - (0, i * tmp5m);
+        else:
+          fill p shifted - (0, i * tmp5m);
+        fi;
+        draw p shifted - (0, i * tmp5m);
+      endfor;    
+      pickup PenA
+      %  draw (-tmpw, 0) -- (tmpw, 0);
+      %  draw (-tmpw, -tmpl) -- (0, -tmpl);
+      fill (-2tmpw, tmpw) -- (-2tmpw, -tmpw) -- (0, 0) -- cycle;
+      fill (-2tmpw, -tmpl + tmpw) -- (-2tmpw, -tmpl + -tmpw) -- (0, -tmpl) -- cycle;
+      if ((l mod 10) > 5) or ((l mod 10) = 0):
+        draw (0, - tmpl) -- (tmpw, - tmpl) withcolor black;
+      else:  
+        draw (0, - tmpl) -- (tmpw, - tmpl) withcolor white;
+      fi;       
+      begingroup
+        interim labeloffset:=3.5bp + tmpw;
+        %    interim defaultscale:=0.5;
+        label.rt(thTEX("\size[12]" & decimal (l) & "{\thinspace}m"),(0, 0));
+        for i := 1 step 1 until l / 5:
+          if ((i * 5) mod 10) = 0:
+            label.rt(thTEX("\size[12]" & "-\thinspace" & decimal (l - i * 5)),(0, - i * tmp5m));
+          else:
+            if i * 5 = l:
+              label.rt(thTEX("\size[12]" & "-\thinspace" & decimal (l - i * 5)),(0, - i * tmp5m));
+            else:  
+              label.rt(thTEX("\size[8]" & "-\thinspace" & decimal (l - i * 5)),(0, - i * tmp5m));
+            fi  
+          fi;  
+        endfor;
+        if (l mod 5) <> 0:
+          label.rt(thTEX("\size[12]" & "-\thinspace0"),(0, - tmpl));
+        fi;
+
+      endgroup
+    enddef;
+                       
+  endcode
+
+  code tex-map
+
+    \def\maplayout{
+      \legendbox{0}{0}{SW}
+      {
+      \scalebar
+      }  
+    }
+  endcode  
+  
+endlayout
+
 ## MAPS ##
 layout grotta_fiume_layout
   doc-title "Grotta del Fiume"
@@ -25,13 +96,13 @@ endlayout
 
 
 # PDF
-export map -projection plan       -layout grotta_fiume_layout -output "out/Grotta del Fiume - pianta.pdf"
-export map -projection extended   -layout grotta_fiume_layout -output "out/Grotta del Fiume - sezione.pdf"
+export map -projection plan       -layout print_centerline -layout grotta_fiume_layout -output "out/Grotta del Fiume - pianta.pdf"
+export map -projection extended   -layout altitude  -layout grotta_fiume_layout -output "out/Grotta del Fiume - sezione.pdf"
 export atlas -projection plan     -layout grotta_fiume_layout -output "out/Grotta del Fiume - atlante - pianta.pdf"
 
 # Google Earth
-#export map -projection plan      -output "out/Grotta del Fiume - pianta.kml"
-#export model                     -output "out/Grotta del Fiume - poligonale.kml"
+export map -projection plan      -output "out/Grotta del Fiume - pianta.kml"
+export model                     -output "out/Grotta del Fiume - poligonale.kml"
 
 # Loch
 export model                     -output "out/Grotta del Fiume.lox"
@@ -40,7 +111,7 @@ export model                     -output "out/Grotta del Fiume.lox"
 export model                     -output "out/Grotta del Fiume.3d"
 
 # HTML
-export continuation-list          -output "out/Grotta del Fiume - continuations.html"
+#export continuation-list          -output "out/Grotta del Fiume - continuations.html"
 
 # SQL
 export database                   -output "out/Grotta del Fiume.sql"
