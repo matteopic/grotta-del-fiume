@@ -18,7 +18,18 @@ function onload () {
 		terrainDirectory: "",
 		surveyDirectory: "",
 		home: "/CaveView/",
+        view:{
+            scraps: true,
+            terrain: true,
+            grid: true
+        },
+        
 	} );
+
+    viewer.addEventListener('newCave', (e)=>{ 
+        viewer.getControls().rotateUp(Math.PI / 180.0 * -68);
+        viewer.getControls().rotateLeft(Math.PI / 180.0 * -140);
+    });
 
 	const ui = new CV2.CaveViewUI( viewer );
 
