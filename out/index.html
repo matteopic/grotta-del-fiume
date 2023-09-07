@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+	<title>Grotta del Fiume</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" href="CaveView/css/caveview.css" rel="stylesheet"/>
+	<meta name="Description" content="Grotta del Fiume survey data">
+</head>
+<body onload="onload();" >
+<script type="text/javascript" src="CaveView/js/CaveView2.js" ></script>
+
+<script type="text/javascript" >
+
+function onload () {
+
+	const viewer = new CV2.CaveViewer( "scene", {
+		terrainDirectory: "",
+		surveyDirectory: "",
+		home: "/CaveView/",
+	} );
+
+	const ui = new CV2.CaveViewUI( viewer );
+
+	ui.loadCave( 'Grotta%20del%20Fiume.lox' );
+
+}
+
+</script>
+<div style="padding: 20px">
+	<div id="scene"></div>
+</div>
+
+<h3>Globale</h3>
+<p>
+    <a href="./Grotta del Fiume - pianta.pdf">Pianta</a><br/>
+	<a href="./Grotta del Fiume - pianta 1_500.pdf">Pianta 1:500</a><br/>
+	<a href="./Grotta del Fiume - pianta 1_10000.pdf">Pianta 1:10000</a><br/>
+	<a href="./Grotta del Fiume - atlante - pianta.pdf">Pianta - Atlante</a><br/>
+	<a href="./Grotta del Fiume - sezione.pdf">Sezione</a><br/>
+</p>
+
+<h3>Ramo dell'aria</h3>
+<p>
+	<a href="./Grotta del Fiume - Ramo dell'Aria - pianta.pdf">Ramo dell'Aria - pianta</a><br/>
+	<a href="./Grotta del Fiume - Ramo dell'Aria - sezione.pdf">Ramo dell'Aria - sezione</a><br/>
+</p>
+
+<h3>3D</h3>
+<p>
+	<a href="./Grotta del Fiume.lox">Therion LOX file</a><br/>
+	<a href="./Grotta del Fiume.3d">Aven Survex 3D file</a>
+</p>
+
+<div style="clear: both" id="scratch">.</div>
+</body>
+</html>
+
+	
