@@ -1,68 +1,93 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<!doctype html>
+<html lang="it">
 <head>
 	<title>8MAAN - Grotta del Fiume</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" href="CaveView/css/caveview.css" rel="stylesheet"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 	<meta name="Description" content="Grotta del Fiume survey data">
 </head>
 <body onload="onload();" >
-<script type="text/javascript" src="CaveView/js/CaveView2.js" ></script>
+	<div class="container-fluid">
+		<h1 class="text-center">8MAAN - Grotta del Fiume</h1>
+		
+		<div class="row">
+			<div class="offset-md-3 col-md6">
+				<div id="scene"></div>
+			</div>
+		</div>
+		
+		<div class="row mt-5">
+			<div class="offset-md-3 col-md6">
+				<h3>Globale</h3>
+				<p>
+					<i class="bi bi-file-earmark-pdf"></i> <a href="./Grotta del Fiume - pianta.pdf" class="icon-pdf">Pianta</a><br/>
+					<i class="bi bi-file-earmark-pdf"></i> <a href="./Grotta del Fiume - atlante - pianta.pdf" class="icon-pdf">Pianta - Atlante</a><br/>
+					<i class="bi bi-file-earmark-pdf"></i> <a href="./Grotta del Fiume - sezione.pdf" class="icon-pdf">Sezione</a><br/>
+				</p>
+			</div>
+		</div>
 
-<script type="text/javascript" >
+		<div class="row">
+			<div class="offset-md-3 col-md6">
+				<h3>Ramo dell'aria</h3>
+				<p>
+					<i class="bi bi-file-earmark-pdf"></i> <a href="./Grotta del Fiume - Ramo dell'Aria - pianta.pdf" class="icon-pdf">Ramo dell'Aria - pianta</a><br/>
+					<i class="bi bi-file-earmark-pdf"></i> <a href="./Grotta del Fiume - Ramo dell'Aria - sezione.pdf" class="icon-pdf">Ramo dell'Aria - sezione</a><br/>
+				</p>
+			</div>
+		</div>
 
-function onload () {
+		<div class="row">
+			<div class="offset-md-3 col-md6">
+				<h3>3D</h3>
+				<p>
+					<a href="./Grotta del Fiume.lox">Therion LOX file</a><br/>
+					<a href="./Grotta del Fiume.3d">Aven Survex 3D file</a>
+				</p>
+			</div>
+		</div>
 
-	const viewer = new CV2.CaveViewer( "scene", {
-		terrainDirectory: "",
-		surveyDirectory: "",
-		home: "/CaveView/",
-        view:{
-            scraps: true,
-            terrain: true,
-            grid: true
-        },
-        
-	} );
+		<footer>
+			<div class="row mt-3">
+				<div class="offset-md-3 col-md6">
+					<p>
+						<i class="bi bi-github"></i>
+						<a href="https://github.com/matteopic/grotta-del-fiume">Follow this project on GitHub</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-    viewer.addEventListener('newCave', (e)=>{ 
-        viewer.getControls().rotateUp(Math.PI / 180.0 * -68);
-        viewer.getControls().rotateLeft(Math.PI / 180.0 * -140);
-    });
 
-    const ui = new CV2.CaveViewUI( viewer );
-    ui.loadCave( 'Grotta%20del%20Fiume.lox' );
-}
-</script>
+	<script type="text/javascript" src="CaveView/js/CaveView2.js" ></script>
+	<script type="text/javascript" >
+	function onload () {
 
-<h1>8MAAN - Grotta del Fiume</h1>
-<div style="padding: 20px">
-	<div id="scene"></div>
-</div>
+		const viewer = new CV2.CaveViewer( "scene", {
+			terrainDirectory: "",
+			surveyDirectory: "",
+			home: "/CaveView/",
+			view:{
+				scraps: true,
+				terrain: true,
+				grid: true
+			},
+			
+		} );
 
-<h3>Globale</h3>
-<p>
-    <a href="./Grotta del Fiume - pianta.pdf">Pianta</a><br/>
-	<a href="./Grotta del Fiume - pianta 1_500.pdf">Pianta 1:500</a><br/>
-	<a href="./Grotta del Fiume - pianta 1_10000.pdf">Pianta 1:10000</a><br/>
-	<a href="./Grotta del Fiume - atlante - pianta.pdf">Pianta - Atlante</a><br/>
-	<a href="./Grotta del Fiume - sezione.pdf">Sezione</a><br/>
-</p>
+		viewer.addEventListener('newCave', (e)=>{ 
+			viewer.getControls().rotateUp(Math.PI / 180.0 * -68);
+			viewer.getControls().rotateLeft(Math.PI / 180.0 * -140);
+		});
 
-<h3>Ramo dell'aria</h3>
-<p>
-	<a href="./Grotta del Fiume - Ramo dell'Aria - pianta.pdf">Ramo dell'Aria - pianta</a><br/>
-	<a href="./Grotta del Fiume - Ramo dell'Aria - sezione.pdf">Ramo dell'Aria - sezione</a><br/>
-</p>
-
-<h3>3D</h3>
-<p>
-	<a href="./Grotta del Fiume.lox">Therion LOX file</a><br/>
-	<a href="./Grotta del Fiume.3d">Aven Survex 3D file</a>
-</p>
-
-<div style="clear: both" id="scratch">.</div>
+		const ui = new CV2.CaveViewUI( viewer );
+		ui.loadCave( 'Grotta%20del%20Fiume.lox' );
+	}
+	</script>
 </body>
 </html>
 
