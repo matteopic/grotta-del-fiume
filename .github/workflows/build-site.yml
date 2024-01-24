@@ -33,12 +33,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Ramo dell'aria
-        uses: matteopic/therion-container@6.1.6
+        uses: matteopic/therion-container@6.2.0
         with:
           thconfig: 'GrottaDelFiume.thconfig'
 
       - name: Ramo dell'aria
-        uses: matteopic/therion-container@6.1.6
+        uses: matteopic/therion-container@6.2.0
         with:
           thconfig: 'RamoDellAria.thconfig'
 
